@@ -46,7 +46,7 @@ GregOlsen.PhotoStudio
 * OS: Windows 11 Enterprise, 64-bit
 * Browser: Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)
 
-## Error Type (Used only)
+## Error Type
 
 * Functional
 * GUI
