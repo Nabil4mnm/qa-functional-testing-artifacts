@@ -1,2 +1,15 @@
-# qa-functional-testing-artifacts
-Functional testing portfolio with Jira bug reports and acceptance testing documentation.
+# QA Functional Testing Artifacts
+This repository contains QA testing documentation created during functional testing.
+
+## Table of Contents
+
+* Bug Reports
+* Acceptance Testing
+* Requirements Specification
+* Attachments
+
+## Bug Reports
+
+
+
+
