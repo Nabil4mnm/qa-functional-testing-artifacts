@@ -19,17 +19,17 @@ The bugs were documented using Jira and exported as a CSV/Excel file and also in
 
 * GregOlsen.PhotoStudio_Mohammad_Nabil_Mahmud (JIRA production) 2026-03-09T21_49_53+0600.csv – Contains all reported bugs including Bug ID, Summary, Priority, Severity, Status, Component, Affects Version/s, Enviornment, Description(Precondtions, Steps, Actual Result, Expected Result), Attachment, Error Type and reporter details.
 
-## Total Bugs Reported
+### Total Bugs Reported
 
 50
 
-## Tools Used
+### Tools Used
 
 * Jira
 * Google Chrome
 * Windows 11
 
-## Modules Tested
+### Modules Tested
 
 * Login
 * Home
@@ -37,32 +37,32 @@ The bugs were documented using Jira and exported as a CSV/Excel file and also in
 * Connect
 * Sessions
 
-## Severity Levels (Used only)
+### Severity Levels (Used only)
 
 * Critical
 * Major
 * Average
 * Minor
 
-## Component
+### Component
 
 GregOlsen.PhotoStudio
 
-## Affects Version/s 
+### Affects Version/s 
 
 1.0
 
-## Enviornment
+### Enviornment
 
 * OS: Windows 11 Enterprise, 64-bit
 * Browser: Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)
 
-## Error Type
+### Error Type
 
 * Functional
 * GUI
 
-## Bug Statistics
+### Bug Statistics
 
 * Critical: 2
 * Major: 18
@@ -75,19 +75,19 @@ These bug reports demonstrate defect identification, documentation, and tracking
 
 This folder contains the acceptance testing sheet used to verify whether application features meet the required specifications.
 
-## Contents
+### Contents
 
 * Acceptance Sheet.xls – Documents the results of acceptance testing for different application functionalities and test cases statistics.
 
-## Project URL
+### Project URL
 
 https://photostudio.demohoster.com/ (Sign in required)
 
-## Total Cases
+### Total Cases
 
 65
 
-## Test Type
+### Test Type
 
 * Acceptance Testing (AT)
 
@@ -97,7 +97,7 @@ The document includes test results and validation outcomes for the tested featur
 
 The requirement specification includes everyhting about the fucntionalities and others.
 
-## Contents
+### Contents
 
 * A. Purpose  
 * B. Home  
