@@ -1,3 +1,3 @@
 # Attachments
 
-All the attachments of the bugs are added.
+All attachments related to the bugs are added.
