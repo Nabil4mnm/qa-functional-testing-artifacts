@@ -123,4 +123,4 @@ This report contains detailed information about defects/bugs and includes charts
 
 ## Attachments
 
-
+All attachments related to the bugs are added.
