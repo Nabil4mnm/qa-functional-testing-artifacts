@@ -1,0 +1,1064 @@
+Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project description,Project url,Priority,Resolution,Assignee,Reporter,Creator,Created,Updated,Last Viewed,Resolved,Affects Version/s,Fix Version/s,Component/s,Due Date,Votes,Labels,Description,Environment,Watchers,Log Work,Original Estimate,Remaining Estimate,Time Spent,Work Ratio,Σ Original Estimate,Σ Remaining Estimate,Σ Time Spent,Security Level,Attachment,Attachment,Custom field ((backup) Browser/s),Custom field ((backup) Exists in the current implementation?),Custom field ((backup) External issue ID - old),Custom field ((backup) Integrator),Custom field ((backup) Issue Occurred On),Custom field ((backup) Issue Status Comment),Custom field ((backup) Platform),Custom field ((backup) Root of the problem),Custom field ((backup) Test Type),Custom field ((backup) Test case priority),Custom field ((backup) Type of Issue),Custom field ((backup) Work Type),"Custom field ((backup, del) Test tasks)","Custom field ((tmp, del) Build/s)","Custom field ((tmp, del?) TestCase Link)",Custom field (Account),Custom field (Actual Result),Custom field (Affected Test Cases),Custom field (Affects Build/s),Custom field (Asana link),Custom field (BT Jira ID),Custom field (BT Project),Custom field (Basecamp Link),Custom field (Billable Category),Custom field (Browser),Custom field (Browser / Environment),Custom field (Browser Version),Custom field (Build/s),Custom field (Business Unit),Custom field (CQ ID),Custom field (CS Project Coordinator),Custom field (Case Study necessity postpone date),Custom field (Client Device),Custom field (Client Device Version),Custom field (Cloud Version),Custom field (Core issue),Custom field (Created By),Custom field (Development),Custom field (End Date),Custom field (Epic Link),Custom field (Epic/Theme),Custom field (Error Type),Custom field (Expected Result),Custom field (Flagged),Custom field (Found by),Custom field (Functionality Changes?),Custom field (Handled By (SGW Tester)),Custom field (Hardware Version),Custom field (Impact),Custom field (Impacted Areas),Custom field (Importance),Custom field (Iteration),Custom field (Level),Custom field (New Original Estimate),Custom field (Next Step),Custom field (Number of candidates),Custom field (Occurrence),Custom field (Original story points),Custom field (Parent Link),Custom field (Partner Contact),Custom field (Payment Status),Custom field (Planned Efforts (FTE)),Custom field (Priority Level),Custom field (Proxy Required),Custom field (RFX Coordinator),Custom field (Rank),Custom field (Rank (Obsolete)),Custom field (Regional Coordinator),Custom field (Related Cases),Custom field (Reported Version),Custom field (Request Info From),Custom field (Revised),Custom field (Router),Custom field (SF Case No),Custom field (SGW Jira ID),Custom field (Severity/Importance),Custom field (Share with),Custom field (Solution),Sprint,Custom field (Start Date),Custom field (Supervisor),Custom field (TVS ID),Custom field (Target end),Custom field (Target start),Custom field (Team),Custom field (Team),Custom field (Team Role),Custom field (Test Type),Custom field (TestLink case),Custom field (Time Category),Custom field (To Attention Of),Custom field (Type of engagement),Custom field (URL),Custom field (Users),Custom field (Version To Fix),Custom field (WSJF),Custom field (Wiki Link),Custom field (Wires Link),Custom field (ZendeskID),Custom field (Обеспечение оборудованием),Comment
+Travel Gallery: Photo zooms in when the expand option is clicked,QATC-978690,3964014,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,02/Mar/26 12:15 PM,02/Mar/26 12:15 PM,09/Mar/26 9:49 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Hover the cursor over ""CONNECT""
+ # Select ""TRAVEL"" 
+ # Click a photo with expand option
+
+ 
+
+*Actual Result:* Photo zooms in when the expand option is clicked. Please see [^Bug_50.mp4]
+
+*Expected Result:* Photo should not zoom in when the expand option is clicked because of natural size in multiple photos according to the requirements. Please see [^50.png]
+
+
+*Additional Information:* This issue is reproduced in all gallery's expand option.","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"02/Mar/26 12:13 PM;m.mahmud;50.png;https://jira.a1qa.com/secure/attachment/2757859/50.png","02/Mar/26 12:08 PM;m.mahmud;Bug_50.mp4;https://jira.a1qa.com/secure/attachment/2757860/Bug_50.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,"0|ifptfk:",9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+"Book Session: Session Information: ""Standard Session"" image is displayed instead of ""Mini Outdoor Session"" image ",QATC-978681,3964004,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,02/Mar/26 11:57 AM,02/Mar/26 11:57 AM,04/Mar/26 1:57 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com|https://photostudio.demohoster.com/]/
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Select ""SESSIONS""
+ # Select ""Book now"" button of any sessions
+ # Click ""Book"" button
+ # Observe the image
+
+ 
+
+*Actual Result:* ""Standard Session"" image is displayed instead of ""Mini Outdoor Session"" image . Please see [^Bug_49.mp4]
+
+*Expected Result:* ""Mini Outdoor Session"" image should be displayed in ""Session Information"" as it was visible in ""Booking Session"". 
+
+
+*Additional Information:* This same issue is reproduced in ""Standard Session"".","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"02/Mar/26 11:57 AM;m.mahmud;Bug_49.mp4;https://jira.a1qa.com/secure/attachment/2757850/Bug_49.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ifptdc:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Portrait Gallery: No minimize option appears when photo is expanded,QATC-978670,3963992,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,02/Mar/26 11:37 AM,02/Mar/26 11:37 AM,04/Mar/26 1:58 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Hover the cursor over ""WORK""
+ # Select ""PORTRAIT"" 
+ # Click any preview photo with expand option
+
+ 
+
+*Actual Result:* No minimize option appears when photo is expanded. Please see [^Bug_48.mp4]
+
+*Expected Result:* All photos should have expand and minimize option according to the requirements. 
+
+
+*Additional Information:* This issue is reproduced in all gallery's pages.","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"02/Mar/26 11:36 AM;m.mahmud;Bug_48.mp4;https://jira.a1qa.com/secure/attachment/2757839/Bug_48.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ifptao:",9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Portrait Gallery: Expand option is limited to 4 photos when on page 1,QATC-978668,3963990,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,02/Mar/26 11:32 AM,02/Mar/26 11:32 AM,04/Mar/26 1:58 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Hover the cursor over ""WORK""
+ # Select ""PORTRAIT"" 
+ # Click all the preview photos in page 1
+
+ 
+
+*Actual Result:* Expand option is limited to 4 photos when on page 1. Please see [^Bug_47.mp4]
+
+*Expected Result:* All photos should have expand option according to the requirements. 
+
+
+*Additional Information:* This issue is reproduced in all gallery's pages.","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"02/Mar/26 11:31 AM;m.mahmud;Bug_47.mp4;https://jira.a1qa.com/secure/attachment/2757837/Bug_47.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ifpta8:",9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Book Information: Contact Information: “Phone” field accepts input when characters are entered,QATC-978664,3963986,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,02/Mar/26 11:17 AM,02/Mar/26 11:17 AM,04/Mar/26 1:41 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Select ""SESSIONS""
+ # Select ""Book now"" button of any sessions
+ # Click ""Book"" button
+ # Input phone containing characters
+
+ 
+
+*Actual Result:* “Phone” field accepts input when characters are entered. Please see [^Bug_46.mp4]
+
+*Expected Result:* “Phone” field should only accept numeric type according to the requirements. Please see [^46.png]","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"02/Mar/26 11:17 AM;m.mahmud;46.png;https://jira.a1qa.com/secure/attachment/2757832/46.png","02/Mar/26 11:17 AM;m.mahmud;Bug_46.mp4;https://jira.a1qa.com/secure/attachment/2757833/Bug_46.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ifpt9c:",9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Mini Studio Session: “Parents count as one additional subject” appears unrendered when booking a session,QATC-978658,3963979,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,FAD,,m.mahmud,m.mahmud,02/Mar/26 11:06 AM,04/Mar/26 3:57 AM,04/Mar/26 1:41 PM,04/Mar/26 3:57 AM,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Select ""SESSIONS""
+ # Select ""Book now"" button of Mini Studio Session
+
+ 
+
+*Actual Result:* “Parents count as one additional subject” appears unrendered when booking a session. Please see [^Bug_45.png]
+
+*Expected Result:* “Parents count as one additional subject” should be included according to the requirements. Please see [^45.png]
+
+
+*Additional Information:* This issue is reproduced in all ""Book Sessions"".","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"02/Mar/26 11:06 AM;m.mahmud;45.png;https://jira.a1qa.com/secure/attachment/2757824/45.png","02/Mar/26 11:04 AM;m.mahmud;Bug_45.png;https://jira.a1qa.com/secure/attachment/2757825/Bug_45.png",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ifpt7s:",9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+"Mini Studio Session: Session Information: Additional Subjects displays ""0"" when ""none"" is selected from dropdown ",QATC-978654,3963975,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,FAD,,m.mahmud,m.mahmud,02/Mar/26 10:53 AM,04/Mar/26 3:54 AM,04/Mar/26 1:41 PM,04/Mar/26 3:54 AM,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Select ""SESSIONS""
+ # Select ""Book now"" button of any sessions
+ # Select ""none"" from Additional subjects dropdown
+ # Click ""Book"" button
+ # Observe the Additional subjects
+
+ 
+
+*Actual Result:* Additional Subjects displays ""0"" when ""none"" is selected from dropdown. Please see [^Bug_44.mp4]
+
+*Expected Result:* Additional Subjects should display ""none"" as there is no ""0"" in the dropdown according to the requirements. Please see [^44.png]","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"02/Mar/26 10:53 AM;m.mahmud;44.png;https://jira.a1qa.com/secure/attachment/2757818/44.png","02/Mar/26 10:51 AM;m.mahmud;Bug_44.mp4;https://jira.a1qa.com/secure/attachment/2757819/Bug_44.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,"0|ifpt6w:",9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Connect: Contact: No footer with studio information is displayed when accessing the page,QATC-978651,3963972,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,02/Mar/26 10:44 AM,02/Mar/26 10:44 AM,04/Mar/26 1:42 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: https://photostudio.demohoster.com/
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Hover the cursor over ""CONNECT""
+ # Select ""CONTACT"" 
+ # Click ""Book"" button
+ # Leave the ""Email"" field empty
+
+ 
+
+*Actual Result:* No footer with studio information is displayed when accessing the page. Please see [^Bug_43.png]
+
+*Expected Result:* Footer with studio information should be displayed when accessing the page according to the requirements. Please see [^43.png]","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"02/Mar/26 10:43 AM;m.mahmud;43.png;https://jira.a1qa.com/secure/attachment/2757814/43.png","02/Mar/26 10:42 AM;m.mahmud;Bug_43.png;https://jira.a1qa.com/secure/attachment/2757815/Bug_43.png",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ifpt68:",9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+"Booking Information: Contact Information: ""404 - Page not found"" displays when ""Continue to payment method"" button is clicked",QATC-978637,3963958,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,02/Mar/26 10:13 AM,02/Mar/26 10:13 AM,04/Mar/26 1:32 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Select ""SESSIONS""
+ # Select ""Book now"" button of any sessions
+ # Click ""Book"" button
+ # Fill up all the necessary fields
+ # Click ""Continue to payment method"" button
+
+ 
+
+*Actual Result:* ""404 - Page not found"" displays when ""Continue to payment method"" button is clicked. Please see [^Bug_42.mp4]
+
+*Expected Result:* ""Continue to payment method"" button should lead to payment page according to the requirements. Please see [^42.png]","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"02/Mar/26 10:12 AM;m.mahmud;42.png;https://jira.a1qa.com/secure/attachment/2757799/42.png","02/Mar/26 10:11 AM;m.mahmud;Bug_42.mp4;https://jira.a1qa.com/secure/attachment/2757800/Bug_42.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ifpt34:",9223372036854775807,,,,,,,,,1-Critical,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+"Book Information: Contact Information: Unfilled ""Company"" displays ""Please fill out this field."" when ""Continue to payment method"" button is clicked",QATC-978633,3963954,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,02/Mar/26 10:02 AM,02/Mar/26 10:02 AM,04/Mar/26 1:42 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Select ""SESSIONS""
+ # Select ""Book now"" button of any sessions
+ # Click ""Book"" button
+ # Leave the ""Company"" field unfilled
+ # Click ""Continue to payment method"" button
+
+ 
+
+*Actual Result:* Unfilled ""Company"" displays ""Please fill out this field."" when ""Continue to payment method"" button is clicked. Please see [^Bug_41.png]
+
+*Expected Result:* Unfilled ""Company"" field should not display ""Please fill out this field."" because it is optional according to the requirements. Please see [^41.png]","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"02/Mar/26 10:01 AM;m.mahmud;41.png;https://jira.a1qa.com/secure/attachment/2757794/41.png","02/Mar/26 10:01 AM;m.mahmud;Bug_41.png;https://jira.a1qa.com/secure/attachment/2757795/Bug_41.png",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ifpt28:",9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+"Booking Information: Contact Information: ""infermation"" is displayed instead of ""information""",QATC-978604,3963925,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,02/Mar/26 8:59 AM,02/Mar/26 8:59 AM,04/Mar/26 1:42 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Select ""SESSIONS""
+ # Select ""Book now"" button of any sessions
+ # Click ""Book"" button
+ # Observe ""Save this infermation for next time"" checkbox
+
+ 
+
+*Actual Result:* ""infermation"" is displayed instead of ""information"". Please see [^Bug_40.png]
+
+*Expected Result:* ""information"" should be displayed according to the requirements. Please see [^40.png]","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"02/Mar/26 8:59 AM;m.mahmud;40.png;https://jira.a1qa.com/secure/attachment/2757764/40.png","02/Mar/26 8:56 AM;m.mahmud;Bug_40.png;https://jira.a1qa.com/secure/attachment/2757765/Bug_40.png",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,"0|ifpsvs:",9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Booking Information: Contact Information: “Save this information for next time” remains unclickable when the cursor hovers over it,QATC-978602,3963923,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,02/Mar/26 8:52 AM,02/Mar/26 8:52 AM,04/Mar/26 1:57 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Select ""SESSIONS""
+ # Select ""Book now"" button of any sessions
+ # Click ""Book"" button
+ # Hover cursor over “Save this information for next time” checkbox
+
+ 
+
+*Actual Result:* “Save this information for next time” remains unclickable when the cursor hovers over it. Please see [^Bug_39.png]
+
+*Expected Result:* “Save this information for next time” checkbox should be clickable to save user's data for following book according to the requirements. Please see [^39.png]","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"02/Mar/26 8:51 AM;m.mahmud;39.png;https://jira.a1qa.com/secure/attachment/2757761/39.png","02/Mar/26 8:48 AM;m.mahmud;Bug_39.png;https://jira.a1qa.com/secure/attachment/2757762/Bug_39.png",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ifpsvc:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+"Book Information: Contact Information: No distribution group displays when ""Keep me up to date on news"" is checked",QATC-978597,3963918,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,02/Mar/26 8:32 AM,02/Mar/26 8:32 AM,04/Mar/26 1:58 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Select ""SESSIONS""
+ # Select ""Book now"" button of any sessions
+ # Click ""Book"" button
+ # Check ""Keep me up to date on news"" checkbox
+
+ 
+
+*Actual Result:* No distribution group displays when ""Keep me up to date on news"" is checked. Please see [^Bug_38.mp4]
+
+*Expected Result:* Distribution group should display when ""Keep me up to date on news"" checkbox is checked because user should be able to add input email to distribution group according to the requirements. Please see [^38.png]","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"02/Mar/26 8:31 AM;m.mahmud;38.png;https://jira.a1qa.com/secure/attachment/2757755/38.png","02/Mar/26 8:28 AM;m.mahmud;Bug_38.mp4;https://jira.a1qa.com/secure/attachment/2757756/Bug_38.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ifpsu8:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+"Book Information: Contact Information: ""Keep me up to date on news"" checked by default instead of unchecked",QATC-978595,3963916,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,02/Mar/26 8:22 AM,02/Mar/26 8:22 AM,04/Mar/26 1:29 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Select ""SESSIONS""
+ # Select ""Book now"" button of any sessions
+ # Click ""Book"" button
+ # Observe ""Keep me up to date on news"" checkbox
+
+ 
+
+*Actual Result:* ""Keep me up to date on news"" checked by default instead of unchecked. Please see [^Bug_37.mp4]
+
+*Expected Result:* ""Keep me up to date on news"" checkbox should stay unchecked by default according to the requirements. Please see [^37.png]","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"02/Mar/26 8:22 AM;m.mahmud;37.png;https://jira.a1qa.com/secure/attachment/2757752/37.png","02/Mar/26 8:22 AM;m.mahmud;Bug_37.mp4;https://jira.a1qa.com/secure/attachment/2757753/Bug_37.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ifpsts:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+"Book Information: Contact Information: Unfilled ""Email"" displays ""Please fill out this field."" instead of ""Valid email is required."" ",QATC-978591,3963912,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,02/Mar/26 8:14 AM,02/Mar/26 8:14 AM,04/Mar/26 1:42 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Select ""SESSIONS""
+ # Select ""Book now"" button of any sessions
+ # Click ""Book"" button
+ # Leave the ""Email"" field empty
+
+ 
+
+*Actual Result:* Unfilled ""Email"" displays ""Please fill out this field."" instead of ""Valid email is required."". Please see [^Bug_36.png]
+
+*Expected Result:* ""Valid email is required."" should display as error message according to the requirements. Please see [^36.png]
+
+ 
+
+*Additional Information:* This issue is reproduced in all pages.","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"02/Mar/26 8:13 AM;m.mahmud;36.png;https://jira.a1qa.com/secure/attachment/2757747/36.png","02/Mar/26 8:13 AM;m.mahmud;Bug_36.png;https://jira.a1qa.com/secure/attachment/2757748/Bug_36.png",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,"0|ifpssw:",9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Book Information: Contact Information: “Email” field accepts input when alphanumeric characters are entered,QATC-978586,3963906,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,02/Mar/26 7:54 AM,02/Mar/26 7:54 AM,04/Mar/26 1:30 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Select ""SESSIONS""
+ # Select ""Book now"" button of any sessions
+ # Click ""Book"" button
+ # Input email containing alphanumeric characters
+
+ 
+
+*Actual Result:* “Email” field accepts input when alphanumeric characters are entered. Please see [^Bug_35.mp4]
+
+*Expected Result:* “Email” field should not accept input when alphanumeric characters are entered according to the requirements. Please see [^35.png]
+
+*Additional Information:* This issue is reproduced in all fields.","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"02/Mar/26 7:51 AM;m.mahmud;35.png;https://jira.a1qa.com/secure/attachment/2757741/35.png","02/Mar/26 7:50 AM;m.mahmud;Bug_35.mp4;https://jira.a1qa.com/secure/attachment/2757742/Bug_35.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ifpsrk:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Standard Session: Additional Subjects: 7 values is displayed instead of 10 values,QATC-978579,3963898,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,02/Mar/26 7:28 AM,02/Mar/26 7:28 AM,04/Mar/26 1:42 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Select ""SESSIONS""
+ # Select ""Book now"" button of Standard Session
+ # Click ""Additional Subjects"" dropdown
+ # Observe the values
+
+ 
+
+*Actual Result:* 7 values is displayed instead of 10 values. Please see [^Bug_34.png]
+
+*Expected Result:* Additional subjects dropdown should have 10 values + none according to the requirements. Please see [^34.png]","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"02/Mar/26 7:27 AM;m.mahmud;34.png;https://jira.a1qa.com/secure/attachment/2757733/34.png","02/Mar/26 7:26 AM;m.mahmud;Bug_34.png;https://jira.a1qa.com/secure/attachment/2757734/Bug_34.png",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ifpsps:",9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+"Book Session: Standard Session: Start price ""$250.00 USD"" is displayed instead of ""$650 USD""",QATC-978575,3963894,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,02/Mar/26 7:18 AM,02/Mar/26 7:18 AM,04/Mar/26 1:57 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Select ""SESSIONS""
+ # Select ""Book now"" button of Standard Session
+ # Observe the start price
+
+ 
+
+*Actual Result:* Start price ""$250.00 USD"" is displayed instead of ""$650 USD"". Please see [^Bug_33.png]
+
+*Expected Result:* Start price ""$650 USD"" should be displayed according to the requirements. Please see [^33.png]","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"02/Mar/26 7:18 AM;m.mahmud;33.png;https://jira.a1qa.com/secure/attachment/2757728/33.png","02/Mar/26 7:14 AM;m.mahmud;Bug_33.png;https://jira.a1qa.com/secure/attachment/2757729/Bug_33.png",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ifpsow:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Session Information: Mini Studio Session: Total price displays $300 USD instead of $305 USD ,QATC-978554,3963872,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,02/Mar/26 5:52 AM,02/Mar/26 5:52 AM,04/Mar/26 12:47 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Select ""SESSIONS""
+ # Select ""Book now"" button of Mini Studio Session
+ # Select value ""1"" from Additional subjects dropdown
+ # Click ""Book"" button
+ # Observe the total price
+
+ 
+
+*Actual Result:*  Total price displays $300 USD instead of $305 USD. Please see [^Bug_32.mp4]
+
+*Expected Result:* Total price should display $305 USD as additional subjects: $55  according to the requirements. Please see [^32.png]
+
+
+*Additional Information:* This issue is reproduced in all values of Additional subjects dropdown expect for ""None"".","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"02/Mar/26 5:51 AM;m.mahmud;32.png;https://jira.a1qa.com/secure/attachment/2757706/32.png","02/Mar/26 5:47 AM;m.mahmud;Bug_32.mp4;https://jira.a1qa.com/secure/attachment/2757707/Bug_32.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ifpsk0:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Mini Studio Session: Additional Subjects: Value “6” remains unclickable when the cursor hovers over it,QATC-978548,3963866,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,02/Mar/26 5:34 AM,02/Mar/26 5:34 AM,04/Mar/26 1:42 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: https://photostudio.demohoster.com/
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Select ""SESSIONS""
+ # Click ""Book now"" button of Mini Studio Session 
+ # Click ""Additional Subjects"" dropdown
+ # Hover the cursor over value ""6""
+
+ 
+
+*Actual Result:* Value “6” remains unclickable when the cursor hovers over it. Please see [^Bug_31.png]
+
+*Expected Result:* Value “6” should be clickable as user can choose quantity of people for photo session according to the requirements. Please see [^31.png]","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"02/Mar/26 5:33 AM;m.mahmud;31.png;https://jira.a1qa.com/secure/attachment/2757700/31.png","02/Mar/26 5:31 AM;m.mahmud;Bug_31.png;https://jira.a1qa.com/secure/attachment/2757701/Bug_31.png",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ifpsio:",9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Contact: No asterisk (*) appears when viewing the “Firstname” title,QATC-978538,3963853,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,02/Mar/26 4:17 AM,02/Mar/26 4:17 AM,04/Mar/26 1:42 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Hover the cursor over ""CONNECT""
+ # Select ""CONTACT""
+ # Observe the “Firstname” title
+
+
+*Actual Result:* No asterisk (*) appears when viewing the “Firstname” title. Please see [^Bug_30.png]
+
+*Expected Result:* Asterisk (*) should appear as “Firstname” is obligatory according to the requirements. Please see [^30.png]
+
+
+*Additional Information:* This issue is reproduced in all field titles.","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"02/Mar/26 4:15 AM;m.mahmud;30.png;https://jira.a1qa.com/secure/attachment/2757692/30.png","02/Mar/26 4:12 AM;m.mahmud;Bug_30.png;https://jira.a1qa.com/secure/attachment/2757693/Bug_30.png",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,"0|ifpsg0:",9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+"Contact: Unfilled ""Lastname"" displays ""Please fill out this field."" instead of ""Lastname is required."" ",QATC-978532,3963846,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,02/Mar/26 3:59 AM,02/Mar/26 3:59 AM,04/Mar/26 1:42 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Hover the cursor over ""CONNECT""
+ # Select ""CONTACT""
+ # Leave ""Lastname"" field unfilled
+ # Click ""Send message"" button to observe
+
+
+*Actual Result:* Unfilled ""Lastname"" displays ""Please fill out this field."" instead of ""Lastname is required."" . Please see [^Bug_29.png]
+
+*Expected Result:* ""Lastname is required."" should display as error message according to the requirements. Please see [^29.png]
+
+
+*Additional Information:* This issue is reproduced in all fields except for ""Firstname"".","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"02/Mar/26 3:59 AM;m.mahmud;29.png;https://jira.a1qa.com/secure/attachment/2757685/29.png","02/Mar/26 3:57 AM;m.mahmud;Bug_29.png;https://jira.a1qa.com/secure/attachment/2757686/Bug_29.png",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ifpseg:",9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+"Contact: Field allows ""Email"" input when the address contains no domain",QATC-978526,3963837,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,02/Mar/26 3:45 AM,02/Mar/26 3:45 AM,04/Mar/26 12:47 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: https://photostudio.demohoster.com/
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Hover the cursor over ""CONNECT""
+ # Select ""CONTACT""
+ # Input email containing no domain
+ # Click ""Send message"" button to observe
+
+
+*Actual Result:* Field allows ""Email"" input when the address contains no domain. Please see [^Bug_28.mp4]
+
+*Expected Result:* Field should not allow ""Email"" input without domain as it has to be email type according to the requirements. Please see [^28.png]","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"02/Mar/26 3:44 AM;m.mahmud;28.png;https://jira.a1qa.com/secure/attachment/2757677/28.png","02/Mar/26 1:07 AM;m.mahmud;Bug_28.mp4;https://jira.a1qa.com/secure/attachment/2757678/Bug_28.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ifpscg:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+"Contact: ""Lastname"" field is limited to 8 characters",QATC-978413,3963715,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,02/Mar/26 12:08 AM,02/Mar/26 12:08 AM,04/Mar/26 1:42 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Hover the cursor over ""CONNECT""
+ # Select ""CONTACT""
+ # Input ""Lastname"" containing more than 8 characters
+
+
+*Actual Result:* ""Lastname"" field is limited to 8 characters. Please see [^Bug_27.png]
+
+*Expected Result:* ""Lastname"" field is limited to 48 characters according to the requirements. Please see [^27.png]","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"02/Mar/26 12:07 AM;m.mahmud;27.png;https://jira.a1qa.com/secure/attachment/2757550/27.png","02/Mar/26 12:02 AM;m.mahmud;Bug_27.png;https://jira.a1qa.com/secure/attachment/2757551/Bug_27.png",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ifprlc:",9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Contact: No “Firstname is required” message appears when the “Firstname” field is unfilled,QATC-978408,3963710,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,01/Mar/26 11:48 PM,01/Mar/26 11:48 PM,04/Mar/26 12:47 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Hover the cursor over ""CONNECT""
+ # Select ""CONTACT""
+ # Fill up all fields except for ""Firstname""
+ # Click ""Send message"" button to observe
+
+ 
+
+*Actual Result:* No “Firstname is required” message appears when the “Firstname” field is unfilled. Please see [^Bug_26.mp4]
+
+*Expected Result:* “Firstname is required” error message should appear when the “Firstname” field is unfilled according to the requirements. Please see [^26.png]","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"01/Mar/26 11:44 PM;m.mahmud;26.png;https://jira.a1qa.com/secure/attachment/2757544/26.png","01/Mar/26 11:39 PM;m.mahmud;Bug_26.mp4;https://jira.a1qa.com/secure/attachment/2757545/Bug_26.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ifprk8:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Contact: “Firstname” field accepts input when alphanumeric characters are entered,QATC-978402,3963701,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,01/Mar/26 10:57 PM,01/Mar/26 10:57 PM,04/Mar/26 1:31 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Hover the cursor over ""CONNECT""
+ # Select ""CONTACT""
+ # Fill up all the necessary fields
+ # Click ""Send message"" button"" to observe
+
+ 
+
+*Actual Result:* “Firstname” field accepts input when alphanumeric characters are entered. Please see [^Bug_25.mp4]
+
+*Expected Result:*  “Firstname” field should not accept input when alphanumeric characters are entered as only alpha type is allowed as input according to the requirements. Please see [^25.png]
+
+
+*Additional Information:* This issue is reproduced in all fields except ""Email"".","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"01/Mar/26 10:55 PM;m.mahmud;25.png;https://jira.a1qa.com/secure/attachment/2757537/25.png","01/Mar/26 10:54 PM;m.mahmud;Bug_25.mp4;https://jira.a1qa.com/secure/attachment/2757538/Bug_25.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ifpriw:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Connect: “SESSIONS” becomes obscured when “CONTACT” is clicked,QATC-978393,3963690,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,01/Mar/26 9:44 PM,01/Mar/26 9:44 PM,04/Mar/26 1:31 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: https://photostudio.demohoster.com/
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Hover the cursor over ""CONNECT""
+ # Select ""CONTACT""
+ # Observe the header tabs
+
+ 
+
+*Actual Result:* “SESSIONS” becomes obscured when “CONTACT” is clicked. Please see [^Bug_24.mp4]
+
+*Expected Result:* Header should be fixed on the top of each page, users should always be able to change location according to the requirements. Please see [^24.png]","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"01/Mar/26 9:43 PM;m.mahmud;24.png;https://jira.a1qa.com/secure/attachment/2757527/24.png","01/Mar/26 9:40 PM;m.mahmud;Bug_24.mp4;https://jira.a1qa.com/secure/attachment/2757528/Bug_24.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ifprgg:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Philanthropy: Client testimonials remain unrendered in the last paragraph,QATC-978386,3963683,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,01/Mar/26 9:03 PM,01/Mar/26 9:03 PM,04/Mar/26 1:42 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: https://photostudio.demohoster.com/
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Hover the cursor over ""CONNECT""
+ # Select ""PHILANTHROPY""
+ # Scroll down to the bottom
+
+ 
+
+*Actual Result:* Client testimonials remain unrendered in the last paragraph. Please see [^Bug_23.png]
+
+*Expected Result:* Client testimonials should be included in the last paragraph according to the requirements. Please see [^23.png]","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"01/Mar/26 9:02 PM;m.mahmud;23.png;https://jira.a1qa.com/secure/attachment/2757519/23.png","01/Mar/26 8:59 PM;m.mahmud;Bug_23.png;https://jira.a1qa.com/secure/attachment/2757520/Bug_23.png",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ifprew:",9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+"Philanthropy: Fifth Line Second Para: ""famely"" is displayed instead of ""family""",QATC-978380,3963676,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,01/Mar/26 8:37 PM,01/Mar/26 8:37 PM,04/Mar/26 1:42 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Hover the cursor over ""CONNECT""
+ # Select ""PHILANTHROPY""
+ # Read the fifth line of Second Para
+
+ 
+
+*Actual Result:* ""famely"" is displayed instead of ""family"". Please see [^Bug_22.png]
+
+*Expected Result:* ""family"" should be displayed according to the requirements. Please see [^22.png]","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"01/Mar/26 8:37 PM;m.mahmud;22.png;https://jira.a1qa.com/secure/attachment/2757512/22.png","01/Mar/26 8:34 PM;m.mahmud;Bug_22.png;https://jira.a1qa.com/secure/attachment/2757513/Bug_22.png",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,"0|ifprdc:",9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+"Philanthropy: Second Para First Line: ""intirest"" is displayed instead of ""interest""",QATC-978378,3963674,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Duplicate,,m.mahmud,m.mahmud,01/Mar/26 8:24 PM,04/Mar/26 3:59 AM,04/Mar/26 1:42 PM,04/Mar/26 3:59 AM,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: https://photostudio.demohoster.com/
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Hover the cursor over ""CONNECT""
+ # Select ""PHILANTHROPY""
+ # Read the first line of second para
+
+ 
+
+*Actual Result:* ""intirest"" is displayed instead of ""interest"". Please see [^Bug_21.png]
+
+*Expected Result:* ""interest"" should be displayed according to the requirements. Please see [^21.png]","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"01/Mar/26 8:23 PM;m.mahmud;21.png;https://jira.a1qa.com/secure/attachment/2757509/21.png","01/Mar/26 8:22 PM;m.mahmud;Bug_21.png;https://jira.a1qa.com/secure/attachment/2757510/Bug_21.png",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,"0|ifprcw:",9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+"Philanthropy: Second Para: ""../images"" is displayed instead of ""images""",QATC-978373,3963669,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Duplicate,,m.mahmud,m.mahmud,01/Mar/26 7:56 PM,04/Mar/26 4:00 AM,04/Mar/26 1:42 PM,04/Mar/26 4:00 AM,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: https://photostudio.demohoster.com/
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Hover the cursor over ""CONNECT""
+ # Select ""PHILANTHROPY""
+ # Read the second para
+
+*Actual Result:* ""../images"" is displayed instead of ""images"". Please see [^Bug_20.png]
+
+*Expected Result:* ""images"" should be displayed according to the requirements. Please see [^20.png]","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"01/Mar/26 7:56 PM;m.mahmud;20.png;https://jira.a1qa.com/secure/attachment/2757498/20.png","01/Mar/26 7:52 PM;m.mahmud;Bug_20.png;https://jira.a1qa.com/secure/attachment/2757499/Bug_20.png",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,"0|ifprbs:",9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Clients Page: Preview photos display with horizontal gutters between them,QATC-978370,3963666,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,01/Mar/26 7:11 PM,01/Mar/26 7:11 PM,04/Mar/26 1:42 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Hover the cursor over ""CONNECT""
+ # Select ""CLIENTS""
+
+ 
+
+*Actual Result:* Preview photos display with horizontal gutters between them. Please see [^Bug_19.png]
+
+*Expected Result:* Preview photos should not have horizontal gutters between them according to the requirements. Please see [^19.png]","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"01/Mar/26 7:10 PM;m.mahmud;19.png;https://jira.a1qa.com/secure/attachment/2757492/19.png","01/Mar/26 7:07 PM;m.mahmud;Bug_19.png;https://jira.a1qa.com/secure/attachment/2757493/Bug_19.png",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,"0|ifprb4:",9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Clients: Lauren Lucia: Page refresh occurs when the preview photo is clicked,QATC-978368,3963664,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,01/Mar/26 6:49 PM,01/Mar/26 6:49 PM,04/Mar/26 1:42 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Hover the cursor over ""CONNECT""
+ # Select ""CLIENTS""
+ # Scroll down and click ""Lauren Lucia""
+
+ 
+
+*Actual Result:* Page refresh occurs when the preview photo is clicked. Please see [^Bug_18.mp4]
+
+*Expected Result:* ""Lauren Lucia"" picture should have link according to the requirements. Please see [^18.png]","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"01/Mar/26 6:48 PM;m.mahmud;18.png;https://jira.a1qa.com/secure/attachment/2757488/18.png","01/Mar/26 6:46 PM;m.mahmud;Bug_18.mp4;https://jira.a1qa.com/secure/attachment/2757489/Bug_18.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ifprao:",9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Clients List: “MAM” is unlisted on the Clients page,QATC-978361,3963657,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,01/Mar/26 5:58 PM,01/Mar/26 5:58 PM,04/Mar/26 1:30 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Hover the cursor over ""CONNECT""
+ # Select ""CLIENTS""
+ # Observe the whole Clients list
+
+ 
+
+*Actual Result:* “MAM” is unlisted on the Clients page. Please see [^Bug_17.mp4]
+
+*Expected Result:* “MAM” should be listed on the Clients page according to the requirements. Please see [^17.png]","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"01/Mar/26 5:58 PM;m.mahmud;17.png;https://jira.a1qa.com/secure/attachment/2757476/17.png","01/Mar/26 5:57 PM;m.mahmud;Bug_17.mp4;https://jira.a1qa.com/secure/attachment/2757477/Bug_17.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ifpr94:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Clients List: “Laser Performance” is unlisted on the Clients page,QATC-978358,3963654,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Duplicate,,m.mahmud,m.mahmud,01/Mar/26 5:50 PM,04/Mar/26 5:08 AM,04/Mar/26 1:31 PM,04/Mar/26 5:08 AM,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Hover the cursor over ""CONNECT""
+ # Select ""CLIENTS""
+ # Observe the whole clients list
+
+ 
+
+*Actual Result:* “Laser Performance” is unlisted on the Clients page. Please see [^Bug_16.mp4]
+
+*Expected Result:* “Laser Performance” should be listed on the Clients page according to the requirements. Please see [^16.png]","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"01/Mar/26 5:46 PM;m.mahmud;16.png;https://jira.a1qa.com/secure/attachment/2757471/16.png","01/Mar/26 5:43 PM;m.mahmud;Bug_16.mp4;https://jira.a1qa.com/secure/attachment/2757472/Bug_16.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ifpr8g:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+"Clients: Caleb Colpitts: “Kate Cleaves” link is displayed instead of “Caleb Colpitts""",QATC-978354,3963650,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,01/Mar/26 5:32 PM,01/Mar/26 5:32 PM,04/Mar/26 12:47 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Hover the cursor over ""CONNECT""
+ # Select ""CLIENTS""
+ # Click ""Caleb Colpitts"" in third row
+
+ 
+
+*Actual Result:* “Kate Cleaves” link is displayed instead of “Caleb Colpitts"". Please see [^Bug_15.png]
+
+*Expected Result:* “Caleb Colpitts"" has its own link according to the requirements. Please see [^15.png]","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"01/Mar/26 5:30 PM;m.mahmud;15.png;https://jira.a1qa.com/secure/attachment/2757463/15.png","01/Mar/26 5:28 PM;m.mahmud;Bug_15.png;https://jira.a1qa.com/secure/attachment/2757464/Bug_15.png",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ifpr7k:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Clients Seventh Row: “Alex Ching” link redirects user to new page when selected,QATC-978350,3963643,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,01/Mar/26 5:06 PM,01/Mar/26 5:06 PM,04/Mar/26 1:42 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Hover the cursor over ""CONNECT""
+ # Select ""CLIENTS""
+ # Scroll down to seventh row
+ # Click ""Alex Ching"" 
+
+ 
+
+*Actual Result:* “Alex Ching” link redirects user to new page when selected. Please see [^Bug_14.mp4]
+
+*Expected Result:* No link provided for ""Alex Ching"" according to the requirements. Please see [^14.png]","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"01/Mar/26 5:06 PM;m.mahmud;14.png;https://jira.a1qa.com/secure/attachment/2757457/14.png","01/Mar/26 5:04 PM;m.mahmud;Bug_14.mp4;https://jira.a1qa.com/secure/attachment/2757458/Bug_14.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ifpr68:",9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+"Clients: ""CLIENTS"" is displayed instead of ""CLIENTS GALLERY""",QATC-978295,3963461,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,01/Mar/26 9:13 AM,01/Mar/26 9:13 AM,04/Mar/26 1:42 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Hover the cursor over ""CONNECT""
+ # Select ""CLIENTS""
+ # Observe the page title
+
+ 
+
+*Actual Result:* ""CLIENTS"" is displayed instead of ""CLIENTS GALLERY"". Please see [^Bug_13.png]
+
+*Expected Result:* Page title is Clients Gallery according to the requirements. Please see [^13.png]","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"01/Mar/26 9:12 AM;m.mahmud;13.png;https://jira.a1qa.com/secure/attachment/2757386/13.png","01/Mar/26 9:09 AM;m.mahmud;Bug_13.png;https://jira.a1qa.com/secure/attachment/2757387/Bug_13.png",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,"0|ifpq1s:",9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Bio & Press: Page loads with a void interface when clicked,QATC-978294,3963460,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,01/Mar/26 9:04 AM,01/Mar/26 9:04 AM,04/Mar/26 1:31 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Hover the cursor over ""CONNECT""
+ # Select ""BIO & PRESS""
+
+ 
+
+*Actual Result:* Page loads with a void interface when clicked. Please see [^Bug_12.mp4]
+
+*Expected Result:* Bio & Press should display about Greg’s life and his articles in press according to the requirements. Please see [^12.png]","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"01/Mar/26 9:03 AM;m.mahmud;12.png;https://jira.a1qa.com/secure/attachment/2757384/12.png","01/Mar/26 8:58 AM;m.mahmud;Bug_12.mp4;https://jira.a1qa.com/secure/attachment/2757385/Bug_12.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ifpq1k:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+"Work: No content appears upon selecting ""MOTION""",QATC-978293,3963459,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,01/Mar/26 8:48 AM,01/Mar/26 8:48 AM,04/Mar/26 1:56 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Hover the cursor over ""WORK""
+ # Select ""MOTION""
+
+ 
+
+*Actual Result:* No content appears upon selecting ""MOTION"". Please see [^Bug_11.mp4]
+
+*Expected Result:* Motion page should contain photo gallery with motion photos according to the requirements. Please see [^11.png]","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"01/Mar/26 8:47 AM;m.mahmud;11.png;https://jira.a1qa.com/secure/attachment/2757382/11.png","01/Mar/26 8:44 AM;m.mahmud;Bug_11.mp4;https://jira.a1qa.com/secure/attachment/2757383/Bug_11.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ifpq1c:",9223372036854775807,,,,,,,,,1-Critical,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Lifestyle Gallery: Third photo in the second row is unrendered ,QATC-978290,3963456,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,01/Mar/26 4:29 AM,01/Mar/26 4:29 AM,04/Mar/26 1:41 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Hover the cursor over ""WORK""
+ # Select ""LIFESTYLE""
+ # Select page 5 from pagination
+ # Observe the second the row third column
+
+ 
+
+*Actual Result:* Third photo in the second row is unrendered . Please see [^Bug_10.png]
+
+*Expected Result:* Third photo in the second row should be rendered according to the requirements. Please see [^10.png]","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"01/Mar/26 4:29 AM;m.mahmud;10.png;https://jira.a1qa.com/secure/attachment/2757378/10.png","01/Mar/26 4:26 AM;m.mahmud;Bug_10.png;https://jira.a1qa.com/secure/attachment/2757379/Bug_10.png",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ifpq0o:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+"Pagination Portrait Gallery: ""NEXT"" button redirects to the previous page instead of the next page when on Page 3",QATC-978286,3963452,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,01/Mar/26 4:03 AM,01/Mar/26 4:03 AM,04/Mar/26 1:31 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Hover the cursor over ""WORK""
+ # Select ""PORTRAIT""
+ # Select page 3 from pagination
+ # Click ""NEXT"" button
+
+ 
+
+*Actual Result:* ""NEXT"" button redirects to the previous page instead of the next page when on Page 3. Please see [^Bug_9.mp4]
+
+*Expected Result:* ""NEXT"" button on Page 3 should navigate to Page 4.","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"01/Mar/26 3:55 AM;m.mahmud;Bug_9.mp4;https://jira.a1qa.com/secure/attachment/2757374/Bug_9.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ifppzs:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Lifestyle Gallery Page 3: Exclusively the clicked photo displays instead of all photos on the current page,QATC-978282,3963448,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,01/Mar/26 3:41 AM,01/Mar/26 3:41 AM,04/Mar/26 1:41 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Hover the cursor over ""WORK""
+ # Select ""LIFESTYLE""
+ # Click any preview photos
+
+ 
+
+*Actual Result:* Exclusively the clicked photo displays instead of all photos on the current page. Please see [^Bug_8.mp4]
+
+*Expected Result:* Multiple photos should opened if clicked on each photo according to the requirements. Please see [^8.png]","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"01/Mar/26 3:40 AM;m.mahmud;8.png;https://jira.a1qa.com/secure/attachment/2757369/8.png","01/Mar/26 3:37 AM;m.mahmud;Bug_8.mp4;https://jira.a1qa.com/secure/attachment/2757370/Bug_8.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ifppyw:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Portrait Gallery Page 3: Second Row: First and second preview photos are displayed in reversed order,QATC-978271,3963437,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,01/Mar/26 2:38 AM,01/Mar/26 2:38 AM,04/Mar/26 1:42 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Hover the cursor to ""WORK""
+ # Select ""PORTRAIT""
+ # Observe the second row of page 3
+
+ 
+
+*Actual Result:* First and second preview photos are displayed in reversed order. Please see [^Bug_7.png]
+
+*Expected Result:* First and second preview photos should stay in usual order according to the requirements. Please see [^7.png]","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"01/Mar/26 2:32 AM;m.mahmud;7.png;https://jira.a1qa.com/secure/attachment/2757356/7.png","01/Mar/26 2:28 AM;m.mahmud;Bug_7.png;https://jira.a1qa.com/secure/attachment/2757357/Bug_7.png",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,"0|ifppwg:",9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Portrait Gallery: No tooltip has been added to the preview photos,QATC-978196,3963362,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,28/Feb/26 10:49 PM,01/Mar/26 2:49 AM,04/Mar/26 1:42 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Hover cursor to ""WORK""
+ # Click ""PORTRAIT""
+ # Observe the preview photos
+
+ 
+
+*Actual Result:* No tooltip has been added to the preview photos. Please see [^Bug_6.png]
+
+*Expected Result:* All preview photos should have tooltip with photo number according to the requirements. Please see [^6.png]","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"28/Feb/26 10:45 PM;m.mahmud;6.png;https://jira.a1qa.com/secure/attachment/2757257/6.png","28/Feb/26 10:43 PM;m.mahmud;Bug_6.png;https://jira.a1qa.com/secure/attachment/2757258/Bug_6.png",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ifppfs:",9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0.0,,,,,"01/Mar/26 2:49 AM;m.mahmud;h2. Portrait Gallery: No tooltip has been added to the preview photos
+h3. Details
+ * 
+*Type:*!https://jira.a1qa.com/secure/viewavatar?size=xsmall&avatarId=25963&avatarType=issuetype|width=16,height=16!  Bug
+ * 
+*Resolution:* Unresolved
+ * 
+*Priority:*!https://jira.a1qa.com/images/icons/priorities/major.svg|width=16,height=16!  Major
+ * 
+*Fix Version/s:* None
+ * 
+{*}Affects Version/s:{*}1.0
+ * 
+{*}Component/s:{*}[GregOlsen.PhotoStudio|https://jira.a1qa.com/issues/?jql=project+%3D+QATC+AND+component+%3D+GregOlsen.PhotoStudio]
+ * 
+*Environment:*
+*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)
+
+ * 
+*Severity/Importance:*
+3-Average
+ * 
+*Error Type:*
+Functional
+h3. Description
+ 
+
+*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Hover cursor to ""WORK""
+ # Click ""PORTRAIT""
+ # Observe the preview photos
+
+ 
+
+*Actual Result:* No tooltip has been added to the preview photos. Please see [^Bug_6.png]
+
+*Expected Result:* All preview photos should have tooltip with photo number according to the requirements. Please see [^6.png]
+
+*Additional Information:* This issue is reproduced in all submenus of ""WORK"".;;;"
+"Footer: ""Adress"" is displayed instead of ""Address""",QATC-978149,3963314,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,28/Feb/26 6:04 PM,28/Feb/26 6:04 PM,04/Mar/26 1:42 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Scroll down to footer 
+ # Observe the word ""Adress""
+
+ 
+
+*Actual Result:* ""Adress"" is displayed instead of ""Address"". Please see [^Bug_5.png]
+
+*Expected Result:* ""Address"" should be displayed according to the requirements. Please see [^5.png]","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"28/Feb/26 6:04 PM;m.mahmud;5.png;https://jira.a1qa.com/secure/attachment/2757192/5.png","28/Feb/26 5:59 PM;m.mahmud;Bug_5.png;https://jira.a1qa.com/secure/attachment/2757193/Bug_5.png",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,"0|ifpp54:",9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Demo: No links have been added to the corresponding galleries,QATC-978145,3963310,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,28/Feb/26 5:37 PM,28/Feb/26 5:37 PM,04/Mar/26 1:42 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Observe the preview photos in ""DEMO"" part
+
+ 
+
+*Actual Result:* No links have been added to the corresponding galleries. Please see [^Bug_4.png]
+
+*Expected Result:* It will be better if links are added to the corresponding galleries according to the requirements. Please see [^4.png]","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"28/Feb/26 5:30 PM;m.mahmud;4.png;https://jira.a1qa.com/secure/attachment/2757185/4.png","28/Feb/26 5:28 PM;m.mahmud;Bug_4.png;https://jira.a1qa.com/secure/attachment/2757186/Bug_4.png",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ifpp48:",9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Search Field: Page refreshes when user clicks the search button after entering input,QATC-978085,3963249,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,28/Feb/26 11:48 AM,28/Feb/26 11:48 AM,04/Mar/26 1:42 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Give an input in the search field
+ # Click the search button
+
+ 
+
+*Actual Result:* Page refreshes when user clicks the search button after entering input. Please see [^Bug_3.mp4]
+
+*Expected Result:* The application should display the page or content according to the input.
+
+
+*Additional Information:* This issue is reproduced in all pages.","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"28/Feb/26 11:47 AM;m.mahmud;Bug_3.mp4;https://jira.a1qa.com/secure/attachment/2757118/Bug_3.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|ifpoqo:",9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+"Header Tabs: The ""CONNECT"" tab is displayed ahead of ""SESSIONS"" tab ",QATC-978039,3963187,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,27/Feb/26 11:29 PM,27/Feb/26 11:29 PM,04/Mar/26 1:42 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Observe the header tabs
+
+ 
+
+*Actual Result:* The ""CONNECT"" tab is displayed ahead of ""SESSIONS"" tab. Please see [^Bug_2.png]
+
+*Expected Result:* The ""SESSIONS"" tab should display ahead of ""CONNECT"" tab according to the requirements. Please see [^2.png]","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"27/Feb/26 11:25 PM;m.mahmud;2.png;https://jira.a1qa.com/secure/attachment/2757045/2.png","27/Feb/26 11:25 PM;m.mahmud;Bug_2.png;https://jira.a1qa.com/secure/attachment/2757046/Bug_2.png",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,"0|ifpocw:",9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Header: No logo displays when user lands in the homepage ,QATC-977952,3963003,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,27/Feb/26 7:21 PM,27/Feb/26 7:21 PM,04/Mar/26 1:42 PM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Observe the top left corner of the header
+
+ 
+
+*Actual Result:* No logo displays when user lands in the homepage. Please see [^Bug_1.png]
+
+*Expected Result:* Logo should display in top left corner of the header. Please see [^1.png]
+
+*Additional Information:* This issue is reproduced in all pages.","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"27/Feb/26 7:14 PM;m.mahmud;1.png;https://jira.a1qa.com/secure/attachment/2756865/1.png","27/Feb/26 7:14 PM;m.mahmud;Bug_1.png;https://jira.a1qa.com/secure/attachment/2756866/Bug_1.png",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,"0|ifpn88:",9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0.0,,,,,
+Header: No logo displays when user logs in the application,QATC-977835,3962520,Bug,Open,QATC,Training Center,software,a.golubovich,,,Major,,,m.mahmud,m.mahmud,27/Feb/26 7:33 AM,01/Mar/26 2:50 AM,02/Mar/26 4:19 AM,,1.0,,GregOlsen.PhotoStudio,,0,,"*Preconditions:*
+
+Users must log in to the application using their login credentials.
+
+*Steps:*
+ # Open the application URL: [https://photostudio.demohoster.com/]
+ # Fill up the ""Username"" and ""Password"" field
+ # Click the ""Sign in"" button
+ # Observe the top left corner of the header
+
+ 
+
+*Actual Result:* No logo displays when user logs in the application. Please see [^Bug_1.png]
+
+*Expected Result:* The logo should display on the top left corner of the header according to the requirements. Please see [^Bug_2.png]
+**
+
+*Additional Information:* This issue is reproduced in all pages.","*OS:* Windows 11 Enterprise, 64-bit
+
+*Browser:* Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)",,,,,,,,,,Leads and Reporter only,"27/Feb/26 7:22 AM;m.mahmud;Bug_1.png;https://jira.a1qa.com/secure/attachment/2756567/Bug_1.png","27/Feb/26 7:28 AM;m.mahmud;Bug_2.png;https://jira.a1qa.com/secure/attachment/2756566/Bug_2.png",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,"0|ifpk9s:",9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0.0,,,,,"01/Mar/26 2:50 AM;m.mahmud;{*}*This one is duplicate{*}*. *Pardon*;;;"
