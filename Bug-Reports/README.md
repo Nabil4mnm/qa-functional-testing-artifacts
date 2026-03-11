@@ -19,16 +19,40 @@ The bugs were documented using Jira and exported as a CSV/Excel file and also in
 * Google Chrome
 * Windows 11
 
-Modules Tested
+## Modules Tested
 
-Login
+* Login
+* Home
+* Work
+* Connect
+* Sessions
 
-Signup
+## Severity Levels (Used only)
 
-Password Reset
+* Critical
+* Major
+* Average
+* Minor
 
-Dashboard
+## Component: GregOlsen.PhotoStudio
 
-Profile
+## Affects Version/s: 1.0
 
+## Enviornment
+
+* OS: Windows 11 Enterprise, 64-bit
+* Browser: Google Chrome Version 145.0.7632.45 (Official Build) (64-bit)
+
+## Error Type (Used only)
+
+* Functional
+* GUI
+
+## Bug Statistics
+
+* Critical: 2
+* Major: 18
+* Average: 21
+* Minor: 9
+  
 These bug reports demonstrate defect identification, documentation, and tracking during the testing process.
