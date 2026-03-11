@@ -119,4 +119,8 @@ The requirement specification includes everyhting about the fucntionalities and 
 
 ## Quality Report
 
+This report contains detailed information about defects/bugs and includes charts for visualization.
+
+## Attachments
+
 
