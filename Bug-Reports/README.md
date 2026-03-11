@@ -33,9 +33,13 @@ The bugs were documented using Jira and exported as a CSV/Excel file and also in
 * Average
 * Minor
 
-## Component: GregOlsen.PhotoStudio
+## Component
 
-## Affects Version/s: 1.0
+GregOlsen.PhotoStudio
+
+## Affects Version/s 
+
+1.0
 
 ## Enviornment
 
