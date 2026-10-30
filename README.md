@@ -95,7 +95,7 @@ The document includes test results and validation outcomes for the tested featur
 
 ## Requirements Specification
 
-The requirement specification includes everyhting about the fucntionalities and others.
+The requirement specification includes everything about the fucntionalities and others.
 
 ### Contents
 
