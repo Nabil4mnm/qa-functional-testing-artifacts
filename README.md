@@ -3,11 +3,16 @@ This repository contains QA testing documentation created during functional test
 
 ## Table of Contents
 
+* Test Case
 * Bug Reports
 * Acceptance Testing
 * Requirements Specification
 * Quality Report
 * Attachments
+
+## Test Case
+
+The document includes all 398 test cases and for the specified requirements.
 
 ## Bug Reports
 
