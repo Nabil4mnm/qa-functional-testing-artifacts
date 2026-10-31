@@ -1,0 +1,570 @@
+ID,Module,Req. Section,Test Scenario,Type,Priority,Preconditions,Steps,Expected Result,Requirement Basis,Status,Actual Result,Defect ID / Notes
+HDR-001,Header & Navigation,B,Header is displayed on every page,UI,High,Site is open,"1. Open Home, each Work gallery, each Connect page, Our Sessions, Book Session, Book Information, Payment","Header with logo/name 'Gregory Olsen', subtitle 'German Photographer', search box and menu is shown on every page.",Spec,Not Run,,
+HDR-002,Header & Navigation,B,Header content and layout,UI,Medium,Home page open,1. Inspect header,"Camera icon + 'GREGORY OLSEN' title, subtitle 'German Photographer', search field with placeholder 'Search...' and magnifier icon, menu items HOME, WORK, CONNECT, SESSIONS, INSTAOLSEN in this order on dark background.",Spec,Not Run,,
+HDR-003,Header & Navigation,B,Header is fixed at top while scrolling,Functional,High,"Open a long page (Home, Clients Gallery, Philanthropy)","1. Scroll to the bottom of the page
+2. Observe header",Header remains fixed at the top; menu is always accessible and does not overlap content in an unusable way.,Spec,Not Run,,
+HDR-004,Header & Navigation,B,Active tab is highlighted,UI,Medium,Site open,1. Open each top-level tab and observe menu,Current tab (e.g. HOME) is highlighted in red; other items are in normal colour.,Spec,Not Run,,
+HDR-005,Header & Navigation,B,HOME menu item navigates to Home,Navigation,High,On any non-Home page,1. Click HOME,Home page opens.,Spec,Not Run,,
+HDR-006,Header & Navigation,C,WORK menu shows gallery submenu,Functional,High,Site open,1. Hover/click WORK,"Submenu lists Portrait, Lifestyle, Travel, Motion.",Spec (submenu behaviour inferred),Not Run,,
+HDR-007,Header & Navigation,C,Submenu 'Portrait' opens Portrait Gallery,Navigation,High,Site open,"1. Open WORK submenu
+2. Click 'Portrait'",Portrait Gallery page opens with title 'Portrait Gallery'.,Spec,Not Run,,
+HDR-008,Header & Navigation,C,Submenu 'Lifestyle' opens Lifestyle Gallery,Navigation,High,Site open,"1. Open WORK submenu
+2. Click 'Lifestyle'",Lifestyle Gallery page opens with title 'Lifestyle Gallery'.,Spec,Not Run,,
+HDR-009,Header & Navigation,C,Submenu 'Travel' opens Travel Gallery,Navigation,High,Site open,"1. Open WORK submenu
+2. Click 'Travel'",Travel Gallery page opens with title 'Travel Gallery'.,Spec,Not Run,,
+HDR-010,Header & Navigation,C,Submenu 'Motion' opens Motion Gallery,Navigation,High,Site open,"1. Open WORK submenu
+2. Click 'Motion'",Motion Gallery page opens with title 'Motion Gallery'.,Spec,Not Run,,
+HDR-011,Header & Navigation,D,CONNECT menu shows submenu,Functional,High,Site open,1. Hover/click CONNECT,"Submenu lists Bio & Press, Clients, Philanthropy, Contact.",Spec (submenu behaviour inferred),Not Run,,
+HDR-012,Header & Navigation,D,Submenu 'Bio & Press' opens correct page,Navigation,High,Site open,"1. Open CONNECT submenu
+2. Click 'Bio & Press'",'Bio & Press' page opens (title: Bio & Press).,Spec,Not Run,,
+HDR-013,Header & Navigation,D,Submenu 'Clients' opens correct page,Navigation,High,Site open,"1. Open CONNECT submenu
+2. Click 'Clients'",'Clients' page opens (title: Clients Gallery).,Spec,Not Run,,
+HDR-014,Header & Navigation,D,Submenu 'Philanthropy' opens correct page,Navigation,High,Site open,"1. Open CONNECT submenu
+2. Click 'Philanthropy'",'Philanthropy' page opens (title: Philanthropy).,Spec,Not Run,,
+HDR-015,Header & Navigation,D,Submenu 'Contact' opens correct page,Navigation,High,Site open,"1. Open CONNECT submenu
+2. Click 'Contact'",'Contact' page opens (title: Contact).,Spec,Not Run,,
+HDR-016,Header & Navigation,E,SESSIONS menu opens Our Sessions,Navigation,High,Site open,1. Click SESSIONS,'Our Sessions' page opens.,Spec,Not Run,,
+HDR-017,Header & Navigation,F,INSTAOLSEN leads to Greg's Instagram,Navigation,High,Site open,1. Click INSTAOLSEN,https://www.instagram.com/ph_gr.olsen/ opens.,Spec,Not Run,,
+HDR-018,Header & Navigation,B,Search box accepts input,Functional,Medium,Site open,"1. Click search field
+2. Type 'portrait'
+3. Press Enter / click magnifier",Search is executed and relevant results are shown (behaviour not defined in spec).,Assumed (not in spec),Not Run,,
+HDR-019,Header & Navigation,B,Search with empty value,Negative,Low,Site open,"1. Leave search empty
+2. Click magnifier",No error/crash; nothing happens or a prompt is shown.,Assumed (not in spec),Not Run,,
+HDR-020,Header & Navigation,B,Search with no matches,Negative,Low,Site open,1. Search 'zzzzqqq',"'No results' message is shown, no crash.",Assumed (not in spec),Not Run,,
+HDR-021,Header & Navigation,B,Search with special characters / script,Security,Medium,Site open,1. Search <script>alert(1)</script> and ' OR 1=1 --,Input is escaped; no script execution or server error.,Assumed (not in spec),Not Run,,
+HDR-022,Header & Navigation,B,Logo/name click returns to Home,Navigation,Low,On any page,1. Click 'Gregory Olsen' logo,Home page opens.,Assumed (not in spec),Not Run,,
+HOME-001,Home,B,Home page layout order,UI,High,Open Home,1. Scroll top to bottom,"Order: header, DEMO block, Q&A zone with photos, footer with studio info.",Spec,Not Run,,
+HOME-002,Home,B,DEMO default main picture,UI,High,Open Home,1. Observe DEMO main picture,Main picture is Greg's photo (camera in front of face) with signature 'Gregory Olsen'.,Spec,Not Run,,
+HOME-003,Home,B,DEMO shows four preview photos,UI,High,Open Home,1. Observe preview column titled DEMO,"Four previews are shown in order: portrait, lifestyle, travel, motion.",Spec,Not Run,,
+HOME-004,Home,B,Selecting Portrait preview changes main picture,Functional,High,Open Home,1. Click/select the Portrait preview,Main picture changes to the portrait preview photo with the corresponding signature.,Spec,Not Run,,
+HOME-005,Home,B,Portrait preview links to Portrait Gallery,Navigation,Medium,Open Home,1. Use the link available for the Portrait preview,Portrait Gallery opens.,Spec ('would be better'),Not Run,,
+HOME-006,Home,B,Selecting Lifestyle preview changes main picture,Functional,High,Open Home,1. Click/select the Lifestyle preview,Main picture changes to the lifestyle preview photo with the corresponding signature.,Spec,Not Run,,
+HOME-007,Home,B,Lifestyle preview links to Lifestyle Gallery,Navigation,Medium,Open Home,1. Use the link available for the Lifestyle preview,Lifestyle Gallery opens.,Spec ('would be better'),Not Run,,
+HOME-008,Home,B,Selecting Travel preview changes main picture,Functional,High,Open Home,1. Click/select the Travel preview,Main picture changes to the travel preview photo with the corresponding signature.,Spec,Not Run,,
+HOME-009,Home,B,Travel preview links to Travel Gallery,Navigation,Medium,Open Home,1. Use the link available for the Travel preview,Travel Gallery opens.,Spec ('would be better'),Not Run,,
+HOME-010,Home,B,Selecting Motion preview changes main picture,Functional,High,Open Home,1. Click/select the Motion preview,Main picture changes to the motion preview photo with the corresponding signature.,Spec,Not Run,,
+HOME-011,Home,B,Motion preview links to Motion Gallery,Navigation,Medium,Open Home,1. Use the link available for the Motion preview,Motion Gallery opens.,Spec ('would be better'),Not Run,,
+HOME-012,Home,B,Switch between previews repeatedly,Functional,Medium,Open Home,"1. Select Portrait, Motion, Lifestyle, Travel, Portrait quickly",Main picture and signature always match the last selected preview; no stale image/signature.,Spec,Not Run,,
+HOME-013,Home,B,Preview hover state,UI,Low,Open Home,1. Hover over each preview,Pointer/hover feedback is shown on preview.,Assumed (not in spec),Not Run,,
+HOME-014,Home,B,Q&A block 'WHAT'S THE STORY?',Content,Medium,Open Home,"1. Scroll to Q&A zone
+2. Check block 'WHAT'S THE STORY?'","Heading 'WHAT'S THE STORY?' with answer text about Greg's work strategy and an accompanying photo. Text begins: ""Every business or brand has a story to tell...""",Spec,Not Run,,
+HOME-015,Home,B,Q&A block 'HOW DOES IT WORK?',Content,Medium,Open Home,"1. Scroll to Q&A zone
+2. Check block 'HOW DOES IT WORK?'","Heading 'HOW DOES IT WORK?' with answer text about Greg's work strategy and an accompanying photo. Text begins: ""Get in touch via email, let us know what you're working on...""",Spec,Not Run,,
+HOME-016,Home,B,Q&A block 'SO WHAT'S NEXT ?',Content,Medium,Open Home,"1. Scroll to Q&A zone
+2. Check block 'SO WHAT'S NEXT ?'","Heading 'SO WHAT'S NEXT ?' with answer text about Greg's work strategy and an accompanying photo. Text begins: ""We then help you by creating strong visual content...""",Spec,Not Run,,
+HOME-017,Home,B,Q&A block 'LAST WORDS',Content,Medium,Open Home,"1. Scroll to Q&A zone
+2. Check block 'LAST WORDS'","Heading 'LAST WORDS' with answer text about Greg's work strategy and an accompanying photo. Text begins: ""We will delight you with every step of the journey...""",Spec,Not Run,,
+HOME-018,Home,B,Q&A blocks order and separators,UI,Low,Open Home,1. Scroll Q&A zone,Order: What's the story? / How does it work? / So what's next? / Last words; separated by horizontal line; photos on right.,Spec,Not Run,,
+HOME-019,Home,B,Footer shows studio information,Content,High,Open Home,1. Scroll to footer,"Footer shows: 'Gregory Olsen Studio', Unit 124 - 4293 Mounttain Square, Whistler, British Columbia, Canada V0N 1B4; phone +44 0207 435 2086; email info@gregoryolsen.com; photo and text 'CONTACT US, THERE'S NO TIME LIKE THE PRESENT'; invitation text above details.",Spec,Not Run,,
+HOME-020,Home,B,Footer Facebook link,Navigation,High,Open Home,1. Click the Facebook link in footer,Facebook opens at https://www.facebook.com/ph_olsen.,Spec,Not Run,,
+HOME-021,Home,B,Footer Twitter link,Navigation,High,Open Home,1. Click the Twitter link in footer,Twitter opens at https://twitter.com/ph_olsen.,Spec,Not Run,,
+HOME-022,Home,B,Footer Instagram link,Navigation,High,Open Home,1. Click the Instagram link in footer,Instagram opens at https://www.instagram.com/ph_olsen.,Spec,Not Run,,
+HOME-023,Home,B,Footer Youtube link,Navigation,High,Open Home,1. Click the Youtube link in footer,Youtube opens at https://www.youtube.com/ph_olsen.,Spec,Not Run,,
+HOME-024,Home,B,Footer email link,Functional,Low,Open Home,1. Click info@gregoryolsen.com,Default mail client opens with the address pre-filled (mailto).,Assumed (not in spec),Not Run,,
+HOME-025,Home,B,Footer is present on other pages,UI,Low,Site open,1. Open other pages and scroll to bottom,Verify whether footer is expected on all pages (spec only defines it on Home).,Needs clarification,Not Run,,
+PORT-001,Portrait Gallery,C1,Page title,Content,High,Open Portrait tab,1. Open Portrait Gallery,Page title is 'Portrait Gallery'.,Spec,Not Run,,
+PORT-002,Portrait Gallery,C1,Number of pages and photos per page,Functional,High,Open gallery,"1. Count pagination links
+2. Count previews on each page",4 pages: 12/12/12/4 photos (total 40 photos).,Spec,Not Run,,
+PORT-003,Portrait Gallery,C1,Last page contains remaining photos only,Boundary,High,Open gallery,1. Go to the last page,Last page shows 4 photos.,Spec,Not Run,,
+PORT-004,Portrait Gallery,C1,Preview size 225x130 px,UI,High,Open gallery,1. Inspect preview dimensions (DevTools),Every preview is 225px x 130px.,Spec,Not Run,,
+PORT-005,Portrait Gallery,C1,Photo order matches reference,Functional,High,Open gallery,1. Compare previews on every page with the reference order (1..40),Photos are in the same order as the numbering in the requirements document.,Spec,Not Run,,
+PORT-006,Portrait Gallery,C1,Grey frame by default,UI,Medium,Open gallery,1. Observe preview frames,Each preview has a grey frame.,Spec,Not Run,,
+PORT-007,Portrait Gallery,C1,Frame turns white on hover,UI,Medium,Open gallery,"1. Hover over a preview
+2. Move cursor away",Frame becomes white on hover and returns to grey after leaving.,Spec,Not Run,,
+PORT-008,Portrait Gallery,C1,Tooltip with photo number,UI,Medium,Open gallery,"1. Hover over several previews (e.g. 1st, 5th, 12th on page 1; first on page 2)",Tooltip shows photo number in format pN (e.g. p5). Verify numbering continues across pages.,Spec,Not Run,,
+PORT-009,Portrait Gallery,C1,Click opens multiple (large) photo at natural size,Functional,High,Open gallery,1. Click a preview,"Large photo opens in viewer at natural size, with caption 'portrait' and counter n/12. (counter total to be confirmed).",Spec,Not Run,,
+PORT-010,Portrait Gallery,C1,Viewer shows thumbnails of current page on hover,Functional,Medium,Large photo open,1. Move cursor over the large photo,Thumbnail strip with all previews from the current page is shown; current photo is highlighted with a white frame.,Spec,Not Run,,
+PORT-011,Portrait Gallery,C1,Viewer: navigate with next/previous arrows,Functional,High,Large photo open,"1. Click next arrow
+2. Click previous arrow",Photo changes accordingly; counter updates.,Spec,Not Run,,
+PORT-012,Portrait Gallery,C1,Viewer: select photo via thumbnail strip,Functional,Medium,Large photo open,"1. Hover to show thumbnails
+2. Click another thumbnail",Selected photo opens; counter updates.,Spec,Not Run,,
+PORT-013,Portrait Gallery,C1,Viewer: first/last photo boundaries,Boundary,Medium,Large photo open on first / last photo of page,"1. On first photo click previous
+2. On last photo click next",Defined behaviour (wrap-around or disabled arrow); no error or blank image.,Needs clarification,Not Run,,
+PORT-014,Portrait Gallery,C1,Viewer: close,Functional,Medium,Large photo open,1. Close viewer (X / Esc / outside click),Viewer closes and gallery page is shown at same page number.,Assumed (not in spec),Not Run,,
+PORT-015,Portrait Gallery,C1,Pagination displayed below previews,UI,High,Open gallery,1. Scroll below previews,Pagination control is shown below the previews with 4 page numbers.,Spec,Not Run,,
+PORT-016,Portrait Gallery,C1,Pagination: go to each page,Functional,High,Open gallery,1. Click each page number,Correct set of photos is displayed; selected page number is highlighted.,Spec,Not Run,,
+PORT-017,Portrait Gallery,C1,Pagination: first page default,Functional,Medium,Open gallery,1. Open gallery,Page 1 is displayed and highlighted.,Spec,Not Run,,
+PORT-018,Portrait Gallery,C1,Pagination: previous/next controls on boundaries,Boundary,Low,Open gallery,"1. Check previous on page 1
+2. Check next on last page",Controls (if present) are disabled/hidden on boundaries.,Assumed (not in spec),Not Run,,
+PORT-019,Portrait Gallery,C1,All images load,Functional,High,Open gallery,1. Open each page and check for broken images / 404s in console,No broken images; previews and full-size images load.,Spec,Not Run,,
+PORT-020,Portrait Gallery,C1,Previews keep aspect ratio / are not distorted,UI,Medium,Open gallery,1. Inspect portrait & landscape images,Images are cropped/fitted without distortion.,Assumed (not in spec),Not Run,,
+PORT-021,Portrait Gallery,C1,Page refresh keeps gallery & page,Functional,Low,Gallery page 2 open,1. Refresh browser,Gallery reloads without error (page retained or page 1 shown - consistent).,Assumed (not in spec),Not Run,,
+LIFE-001,Lifestyle Gallery,C2,Page title,Content,High,Open Lifestyle tab,1. Open Lifestyle Gallery,Page title is 'Lifestyle Gallery'.,Spec,Not Run,,
+LIFE-002,Lifestyle Gallery,C2,Number of pages and photos per page,Functional,High,Open gallery,"1. Count pagination links
+2. Count previews on each page",5 pages x 12 photos (total 60 photos).,Spec,Not Run,,
+LIFE-003,Lifestyle Gallery,C2,Last page contains remaining photos only,Boundary,High,Open gallery,1. Go to the last page,Last page shows 12 photos.,Spec,Not Run,,
+LIFE-004,Lifestyle Gallery,C2,Preview size 225x130 px,UI,High,Open gallery,1. Inspect preview dimensions (DevTools),Every preview is 225px x 130px.,Spec,Not Run,,
+LIFE-005,Lifestyle Gallery,C2,Photo order matches reference,Functional,High,Open gallery,1. Compare previews on every page with the reference order (1..60),Photos are in the same order as the numbering in the requirements document.,Spec,Not Run,,
+LIFE-006,Lifestyle Gallery,C2,Grey frame by default,UI,Medium,Open gallery,1. Observe preview frames,Each preview has a grey frame.,Spec,Not Run,,
+LIFE-007,Lifestyle Gallery,C2,Frame turns white on hover,UI,Medium,Open gallery,"1. Hover over a preview
+2. Move cursor away",Frame becomes white on hover and returns to grey after leaving.,Spec,Not Run,,
+LIFE-008,Lifestyle Gallery,C2,Tooltip with photo number,UI,Medium,Open gallery,"1. Hover over several previews (e.g. 1st, 5th, 12th on page 1; first on page 2)",Tooltip shows photo number in format pN (e.g. p5). Verify numbering continues across pages.,Spec,Not Run,,
+LIFE-009,Lifestyle Gallery,C2,Click opens multiple (large) photo at natural size,Functional,High,Open gallery,1. Click a preview,"Large photo opens in viewer at natural size, with caption 'lifestyle' and counter n/12. (counter total to be confirmed).",Spec,Not Run,,
+LIFE-010,Lifestyle Gallery,C2,Viewer shows thumbnails of current page on hover,Functional,Medium,Large photo open,1. Move cursor over the large photo,Thumbnail strip with all previews from the current page is shown; current photo is highlighted with a white frame.,Spec,Not Run,,
+LIFE-011,Lifestyle Gallery,C2,Viewer: navigate with next/previous arrows,Functional,High,Large photo open,"1. Click next arrow
+2. Click previous arrow",Photo changes accordingly; counter updates.,Spec,Not Run,,
+LIFE-012,Lifestyle Gallery,C2,Viewer: select photo via thumbnail strip,Functional,Medium,Large photo open,"1. Hover to show thumbnails
+2. Click another thumbnail",Selected photo opens; counter updates.,Spec,Not Run,,
+LIFE-013,Lifestyle Gallery,C2,Viewer: first/last photo boundaries,Boundary,Medium,Large photo open on first / last photo of page,"1. On first photo click previous
+2. On last photo click next",Defined behaviour (wrap-around or disabled arrow); no error or blank image.,Needs clarification,Not Run,,
+LIFE-014,Lifestyle Gallery,C2,Viewer: close,Functional,Medium,Large photo open,1. Close viewer (X / Esc / outside click),Viewer closes and gallery page is shown at same page number.,Assumed (not in spec),Not Run,,
+LIFE-015,Lifestyle Gallery,C2,Pagination displayed below previews,UI,High,Open gallery,1. Scroll below previews,Pagination control is shown below the previews with 5 page numbers.,Spec,Not Run,,
+LIFE-016,Lifestyle Gallery,C2,Pagination: go to each page,Functional,High,Open gallery,1. Click each page number,Correct set of photos is displayed; selected page number is highlighted.,Spec,Not Run,,
+LIFE-017,Lifestyle Gallery,C2,Pagination: first page default,Functional,Medium,Open gallery,1. Open gallery,Page 1 is displayed and highlighted.,Spec,Not Run,,
+LIFE-018,Lifestyle Gallery,C2,Pagination: previous/next controls on boundaries,Boundary,Low,Open gallery,"1. Check previous on page 1
+2. Check next on last page",Controls (if present) are disabled/hidden on boundaries.,Assumed (not in spec),Not Run,,
+LIFE-019,Lifestyle Gallery,C2,All images load,Functional,High,Open gallery,1. Open each page and check for broken images / 404s in console,No broken images; previews and full-size images load.,Spec,Not Run,,
+LIFE-020,Lifestyle Gallery,C2,Previews keep aspect ratio / are not distorted,UI,Medium,Open gallery,1. Inspect portrait & landscape images,Images are cropped/fitted without distortion.,Assumed (not in spec),Not Run,,
+LIFE-021,Lifestyle Gallery,C2,Page refresh keeps gallery & page,Functional,Low,Gallery page 2 open,1. Refresh browser,Gallery reloads without error (page retained or page 1 shown - consistent).,Assumed (not in spec),Not Run,,
+TRAV-001,Travel Gallery,C3,Page title,Content,High,Open Travel tab,1. Open Travel Gallery,Page title is 'Travel Gallery'.,Spec,Not Run,,
+TRAV-002,Travel Gallery,C3,Number of pages and photos per page,Functional,High,Open gallery,"1. Count pagination links
+2. Count previews on each page",4 pages x 12 photos (total 48 photos).,Spec,Not Run,,
+TRAV-003,Travel Gallery,C3,Last page contains remaining photos only,Boundary,High,Open gallery,1. Go to the last page,Last page shows 12 photos.,Spec,Not Run,,
+TRAV-004,Travel Gallery,C3,Preview size 225x130 px,UI,High,Open gallery,1. Inspect preview dimensions (DevTools),Every preview is 225px x 130px.,Spec,Not Run,,
+TRAV-005,Travel Gallery,C3,Photo order matches reference,Functional,High,Open gallery,1. Compare previews on every page with the reference order (1..48),Photos are in the same order as the numbering in the requirements document.,Spec,Not Run,,
+TRAV-006,Travel Gallery,C3,Grey frame by default,UI,Medium,Open gallery,1. Observe preview frames,Each preview has a grey frame.,Spec,Not Run,,
+TRAV-007,Travel Gallery,C3,Frame turns white on hover,UI,Medium,Open gallery,"1. Hover over a preview
+2. Move cursor away",Frame becomes white on hover and returns to grey after leaving.,Spec,Not Run,,
+TRAV-008,Travel Gallery,C3,Tooltip with photo number,UI,Medium,Open gallery,"1. Hover over several previews (e.g. 1st, 5th, 12th on page 1; first on page 2)",Tooltip shows photo number in format pN (e.g. p5). Verify numbering continues across pages.,Spec,Not Run,,
+TRAV-009,Travel Gallery,C3,Click opens multiple (large) photo at natural size,Functional,High,Open gallery,1. Click a preview,"Large photo opens in viewer at natural size, with caption 'travel' and counter n/12. (counter total to be confirmed).",Spec,Not Run,,
+TRAV-010,Travel Gallery,C3,Viewer shows thumbnails of current page on hover,Functional,Medium,Large photo open,1. Move cursor over the large photo,Thumbnail strip with all previews from the current page is shown; current photo is highlighted with a white frame.,Spec,Not Run,,
+TRAV-011,Travel Gallery,C3,Viewer: navigate with next/previous arrows,Functional,High,Large photo open,"1. Click next arrow
+2. Click previous arrow",Photo changes accordingly; counter updates.,Spec,Not Run,,
+TRAV-012,Travel Gallery,C3,Viewer: select photo via thumbnail strip,Functional,Medium,Large photo open,"1. Hover to show thumbnails
+2. Click another thumbnail",Selected photo opens; counter updates.,Spec,Not Run,,
+TRAV-013,Travel Gallery,C3,Viewer: first/last photo boundaries,Boundary,Medium,Large photo open on first / last photo of page,"1. On first photo click previous
+2. On last photo click next",Defined behaviour (wrap-around or disabled arrow); no error or blank image.,Needs clarification,Not Run,,
+TRAV-014,Travel Gallery,C3,Viewer: close,Functional,Medium,Large photo open,1. Close viewer (X / Esc / outside click),Viewer closes and gallery page is shown at same page number.,Assumed (not in spec),Not Run,,
+TRAV-015,Travel Gallery,C3,Pagination displayed below previews,UI,High,Open gallery,1. Scroll below previews,Pagination control is shown below the previews with 4 page numbers.,Spec,Not Run,,
+TRAV-016,Travel Gallery,C3,Pagination: go to each page,Functional,High,Open gallery,1. Click each page number,Correct set of photos is displayed; selected page number is highlighted.,Spec,Not Run,,
+TRAV-017,Travel Gallery,C3,Pagination: first page default,Functional,Medium,Open gallery,1. Open gallery,Page 1 is displayed and highlighted.,Spec,Not Run,,
+TRAV-018,Travel Gallery,C3,Pagination: previous/next controls on boundaries,Boundary,Low,Open gallery,"1. Check previous on page 1
+2. Check next on last page",Controls (if present) are disabled/hidden on boundaries.,Assumed (not in spec),Not Run,,
+TRAV-019,Travel Gallery,C3,All images load,Functional,High,Open gallery,1. Open each page and check for broken images / 404s in console,No broken images; previews and full-size images load.,Spec,Not Run,,
+TRAV-020,Travel Gallery,C3,Previews keep aspect ratio / are not distorted,UI,Medium,Open gallery,1. Inspect portrait & landscape images,Images are cropped/fitted without distortion.,Assumed (not in spec),Not Run,,
+TRAV-021,Travel Gallery,C3,Page refresh keeps gallery & page,Functional,Low,Gallery page 2 open,1. Refresh browser,Gallery reloads without error (page retained or page 1 shown - consistent).,Assumed (not in spec),Not Run,,
+MOT-001,Motion Gallery,C4,Page title,Content,High,Open Motion tab,1. Open Motion Gallery,Page title is 'Motion Gallery'.,Spec,Not Run,,
+MOT-002,Motion Gallery,C4,Number of pages and photos per page,Functional,High,Open gallery,"1. Count pagination links
+2. Count previews on each page",2 pages: 12/6 photos (total 18 photos).,Spec,Not Run,,
+MOT-003,Motion Gallery,C4,Last page contains remaining photos only,Boundary,High,Open gallery,1. Go to the last page,Last page shows 6 photos.,Spec,Not Run,,
+MOT-004,Motion Gallery,C4,Preview size 225x130 px,UI,High,Open gallery,1. Inspect preview dimensions (DevTools),Every preview is 225px x 130px.,Spec,Not Run,,
+MOT-005,Motion Gallery,C4,Photo order matches reference,Functional,High,Open gallery,1. Compare previews on every page with the reference order (1..18),Photos are in the same order as the numbering in the requirements document.,Spec,Not Run,,
+MOT-006,Motion Gallery,C4,Grey frame by default,UI,Medium,Open gallery,1. Observe preview frames,Each preview has a grey frame.,Spec,Not Run,,
+MOT-007,Motion Gallery,C4,Frame turns white on hover,UI,Medium,Open gallery,"1. Hover over a preview
+2. Move cursor away",Frame becomes white on hover and returns to grey after leaving.,Spec,Not Run,,
+MOT-008,Motion Gallery,C4,Tooltip with photo number,UI,Medium,Open gallery,"1. Hover over several previews (e.g. 1st, 5th, 12th on page 1; first on page 2)",Tooltip shows photo number in format pN (e.g. p5). Verify numbering continues across pages.,Spec,Not Run,,
+MOT-009,Motion Gallery,C4,Click opens multiple (large) photo at natural size,Functional,High,Open gallery,1. Click a preview,"Large photo opens in viewer at natural size, with caption 'motion' and counter n/12. (counter total to be confirmed).",Spec,Not Run,,
+MOT-010,Motion Gallery,C4,Viewer shows thumbnails of current page on hover,Functional,Medium,Large photo open,1. Move cursor over the large photo,Thumbnail strip with all previews from the current page is shown; current photo is highlighted with a white frame.,Spec,Not Run,,
+MOT-011,Motion Gallery,C4,Viewer: navigate with next/previous arrows,Functional,High,Large photo open,"1. Click next arrow
+2. Click previous arrow",Photo changes accordingly; counter updates.,Spec,Not Run,,
+MOT-012,Motion Gallery,C4,Viewer: select photo via thumbnail strip,Functional,Medium,Large photo open,"1. Hover to show thumbnails
+2. Click another thumbnail",Selected photo opens; counter updates.,Spec,Not Run,,
+MOT-013,Motion Gallery,C4,Viewer: first/last photo boundaries,Boundary,Medium,Large photo open on first / last photo of page,"1. On first photo click previous
+2. On last photo click next",Defined behaviour (wrap-around or disabled arrow); no error or blank image.,Needs clarification,Not Run,,
+MOT-014,Motion Gallery,C4,Viewer: close,Functional,Medium,Large photo open,1. Close viewer (X / Esc / outside click),Viewer closes and gallery page is shown at same page number.,Assumed (not in spec),Not Run,,
+MOT-015,Motion Gallery,C4,Pagination displayed below previews,UI,High,Open gallery,1. Scroll below previews,Pagination control is shown below the previews with 2 page numbers.,Spec,Not Run,,
+MOT-016,Motion Gallery,C4,Pagination: go to each page,Functional,High,Open gallery,1. Click each page number,Correct set of photos is displayed; selected page number is highlighted.,Spec,Not Run,,
+MOT-017,Motion Gallery,C4,Pagination: first page default,Functional,Medium,Open gallery,1. Open gallery,Page 1 is displayed and highlighted.,Spec,Not Run,,
+MOT-018,Motion Gallery,C4,Pagination: previous/next controls on boundaries,Boundary,Low,Open gallery,"1. Check previous on page 1
+2. Check next on last page",Controls (if present) are disabled/hidden on boundaries.,Assumed (not in spec),Not Run,,
+MOT-019,Motion Gallery,C4,All images load,Functional,High,Open gallery,1. Open each page and check for broken images / 404s in console,No broken images; previews and full-size images load.,Spec,Not Run,,
+MOT-020,Motion Gallery,C4,Previews keep aspect ratio / are not distorted,UI,Medium,Open gallery,1. Inspect portrait & landscape images,Images are cropped/fitted without distortion.,Assumed (not in spec),Not Run,,
+MOT-021,Motion Gallery,C4,Page refresh keeps gallery & page,Functional,Low,Gallery page 2 open,1. Refresh browser,Gallery reloads without error (page retained or page 1 shown - consistent).,Assumed (not in spec),Not Run,,
+BIO-001,Bio & Press,D1,Page title,Content,High,Open Bio & Press,1. Open Connect > Bio & Press,Title is 'Bio & Press'.,Spec,Not Run,,
+BIO-002,Bio & Press,D1,Greg's photo displayed,UI,High,Open page,1. Observe photo,"Greg's black&white portrait is displayed next to the text, not distorted.",Spec,Not Run,,
+BIO-003,Bio & Press,D1,Bio text content,Content,High,Open page,1. Read bio text,"Text matches the spec: 'Gregory Olsen is a world renowned photographer...' incl. Justin Bieber, Tom Hanks, Jessica Alba; Fast Company, Huffington Post, MTV; 60 countries, 7 continents; book PhotoTrekking; Nike, Coca Cola, Adidas; Conde Nast Traveler, Cosmopolitan, Marie Claire.",Spec,Not Run,,
+BIO-004,Bio & Press,D1,Text formatting preserved,UI,Medium,Open page,1. Compare formatting (bold/italic/paragraphs) with source document,Formatting matches source ('with used formatting').,Spec,Not Run,,
+BIO-005,Bio & Press,D1,'In The Press' line,Content,Medium,Open page,1. Find press section,'In The Press - Fast Company and Huffington Post.' is shown.,Spec,Not Run,,
+BIO-006,Bio & Press,D1,Press names link to articles,Navigation,Low,Open page,1. Click Fast Company / Huffington Post,Not defined in spec - verify expected behaviour.,Needs clarification,Not Run,,
+CLI-001,Clients Gallery,D2,Page title,Content,High,Open Clients,1. Open Connect > Clients,Title is 'Clients Gallery'.,Spec,Not Run,,
+CLI-002,Clients Gallery,D2,"Grid layout (4 per row, name captions)",UI,High,Open page,1. Observe layout,"Client photos shown in grid of 4 columns with client name under each photo, on black background with grey frames (per mock-up).",Spec,Not Run,,
+CLI-003,Clients Gallery,D2,All 30 clients displayed,Functional,High,Open page,1. Count clients,30 clients are listed.,Spec,Not Run,,
+CLI-004,Clients Gallery,D2,Client order,Functional,Medium,Open page,1. Compare order with list 1-30 and mock-up,Order is consistent with requirements (note: list and mock-up differ - see Requirement Issues).,Needs clarification,Not Run,,
+CLI-005,Clients Gallery,D2,#1 Devienna Anggraini - photo and link,Navigation,Medium,Open page,"1. Verify name 'Devienna Anggraini' and photo
+2. Click the picture",Picture links to http://www.dametals.com/.,Spec,Not Run,,
+CLI-006,Clients Gallery,D2,"#2 Elizabeth Auffenberg - photo, no link",Content,Low,Open page,"1. Verify name 'Elizabeth Auffenberg' and photo
+2. Click the picture","Name and photo shown; no link defined in spec, so no navigation (confirm).",Spec,Not Run,,
+CLI-007,Clients Gallery,D2,"#3 Max & Tara Axler - photo, no link",Content,Low,Open page,"1. Verify name 'Max & Tara Axler' and photo
+2. Click the picture","Name and photo shown; no link defined in spec, so no navigation (confirm).",Spec,Not Run,,
+CLI-008,Clients Gallery,D2,"#4 Ashley & Rich Baccari - photo, no link",Content,Low,Open page,"1. Verify name 'Ashley & Rich Baccari' and photo
+2. Click the picture","Name and photo shown; no link defined in spec, so no navigation (confirm).",Spec,Not Run,,
+CLI-009,Clients Gallery,D2,#5 BFYTBODY - photo and link,Navigation,Medium,Open page,"1. Verify name 'BFYTBODY' and photo
+2. Click the picture",Picture links to https://www.facebook.com/BFYTBODY/.,Spec,Not Run,,
+CLI-010,Clients Gallery,D2,#6 Laura Blanc - photo and link,Navigation,Medium,Open page,"1. Verify name 'Laura Blanc' and photo
+2. Click the picture",Picture links to http://lblanc.com.,Spec,Not Run,,
+CLI-011,Clients Gallery,D2,#7 Gwen Oulman Brennan - photo and link,Navigation,Medium,Open page,"1. Verify name 'Gwen Oulman Brennan' and photo
+2. Click the picture",Picture links to http://www.larutanstudio.com/.,Spec,Not Run,,
+CLI-012,Clients Gallery,D2,#8 Madeline Cann - photo and link,Navigation,Medium,Open page,"1. Verify name 'Madeline Cann' and photo
+2. Click the picture",Picture links to https://risd.digication.com/madeline_cann/Welcome/published.,Spec,Not Run,,
+CLI-013,Clients Gallery,D2,"#9 Pedro Castillo - photo, no link",Content,Low,Open page,"1. Verify name 'Pedro Castillo' and photo
+2. Click the picture","Name and photo shown; no link defined in spec, so no navigation (confirm).",Spec,Not Run,,
+CLI-014,Clients Gallery,D2,"#10 Alex Ching - photo, no link",Content,Low,Open page,"1. Verify name 'Alex Ching' and photo
+2. Click the picture","Name and photo shown; no link defined in spec, so no navigation (confirm).",Spec,Not Run,,
+CLI-015,Clients Gallery,D2,#11 Kate Cleaves - photo and link,Navigation,Medium,Open page,"1. Verify name 'Kate Cleaves' and photo
+2. Click the picture",Picture links to http://www.katecleaves.com.,Spec,Not Run,,
+CLI-016,Clients Gallery,D2,#12 Caleb Colpitts - photo and link,Navigation,Medium,Open page,"1. Verify name 'Caleb Colpitts' and photo
+2. Click the picture",Picture links to http://calebcolpitts.com/.,Spec,Not Run,,
+CLI-017,Clients Gallery,D2,#13 Jennaca Davies - photo and link,Navigation,Medium,Open page,"1. Verify name 'Jennaca Davies' and photo
+2. Click the picture",Picture links to http://jennaca.com.,Spec,Not Run,,
+CLI-018,Clients Gallery,D2,#14 Emcor - photo and link,Navigation,Medium,Open page,"1. Verify name 'Emcor' and photo
+2. Click the picture",Picture links to http://www.emcorgroup.com.,Spec,Not Run,,
+CLI-019,Clients Gallery,D2,"#15 Yasmine Ghaemi - photo, no link",Content,Low,Open page,"1. Verify name 'Yasmine Ghaemi' and photo
+2. Click the picture","Name and photo shown; no link defined in spec, so no navigation (confirm).",Spec,Not Run,,
+CLI-020,Clients Gallery,D2,#16 Emily Habansky - photo and link,Navigation,Medium,Open page,"1. Verify name 'Emily Habansky' and photo
+2. Click the picture",Picture links to http://emilyhabansky.blogspot.com/.,Spec,Not Run,,
+CLI-021,Clients Gallery,D2,"#17 Yaungeun Han - photo, no link",Content,Low,Open page,"1. Verify name 'Yaungeun Han' and photo
+2. Click the picture","Name and photo shown; no link defined in spec, so no navigation (confirm).",Spec,Not Run,,
+CLI-022,Clients Gallery,D2,"#18 Jennifer Harris - photo, no link",Content,Low,Open page,"1. Verify name 'Jennifer Harris' and photo
+2. Click the picture","Name and photo shown; no link defined in spec, so no navigation (confirm).",Spec,Not Run,,
+CLI-023,Clients Gallery,D2,#19 Kong Crossfit - photo and link,Navigation,Medium,Open page,"1. Verify name 'Kong Crossfit' and photo
+2. Click the picture",Picture links to http://kongcrossfit.com/.,Spec,Not Run,,
+CLI-024,Clients Gallery,D2,"#20 Nikki Thiess-Kusiak - photo, no link",Content,Low,Open page,"1. Verify name 'Nikki Thiess-Kusiak' and photo
+2. Click the picture","Name and photo shown; no link defined in spec, so no navigation (confirm).",Spec,Not Run,,
+CLI-025,Clients Gallery,D2,#21 Laser Performance - photo and link,Navigation,Medium,Open page,"1. Verify name 'Laser Performance' and photo
+2. Click the picture",Picture links to http://laserperformance.com.,Spec,Not Run,,
+CLI-026,Clients Gallery,D2,#22 Leblon - photo and link,Navigation,Medium,Open page,"1. Verify name 'Leblon' and photo
+2. Click the picture",Picture links to http://www.leblon.com/.,Spec,Not Run,,
+CLI-027,Clients Gallery,D2,"#23 Patricia Leunis - photo, no link",Content,Low,Open page,"1. Verify name 'Patricia Leunis' and photo
+2. Click the picture","Name and photo shown; no link defined in spec, so no navigation (confirm).",Spec,Not Run,,
+CLI-028,Clients Gallery,D2,#24 Lilo Studio - photo and link,Navigation,Medium,Open page,"1. Verify name 'Lilo Studio' and photo
+2. Click the picture",Picture links to http://www.lilostudio.com.,Spec,Not Run,,
+CLI-029,Clients Gallery,D2,#25 Lauren Lucia - photo and link,Navigation,Medium,Open page,"1. Verify name 'Lauren Lucia' and photo
+2. Click the picture",Picture links to https://www.facebook.com/LaurenLuciaDesigns.,Spec,Not Run,,
+CLI-030,Clients Gallery,D2,"#26 Lucienne Von Doz - photo, no link",Content,Low,Open page,"1. Verify name 'Lucienne Von Doz' and photo
+2. Click the picture","Name and photo shown; no link defined in spec, so no navigation (confirm).",Spec,Not Run,,
+CLI-031,Clients Gallery,D2,#27 Ema Ishii - photo and link,Navigation,Medium,Open page,"1. Verify name 'Ema Ishii' and photo
+2. Click the picture",Picture links to http://www.saatchiart.com/ema024.,Spec,Not Run,,
+CLI-032,Clients Gallery,D2,#28 Maclaren - photo and link,Navigation,Medium,Open page,"1. Verify name 'Maclaren' and photo
+2. Click the picture",Picture links to http://www.maclarenbaby.com/.,Spec,Not Run,,
+CLI-033,Clients Gallery,D2,#29 MAM - photo and link,Navigation,Medium,Open page,"1. Verify name 'MAM' and photo
+2. Click the picture",Picture links to http://www.mambaby.com.,Spec,Not Run,,
+CLI-034,Clients Gallery,D2,#30 Marta Mattsson - photo and link,Navigation,Medium,Open page,"1. Verify name 'Marta Mattsson' and photo
+2. Click the picture",Picture links to http://www.martamattsson.com.,Spec,Not Run,,
+CLI-035,Clients Gallery,D2,External links open correctly / no broken links,Functional,Medium,Open page,1. Check all 19 external links return a page,No 404/DNS errors. (External sites may change - report as informational.),Spec,Not Run,,
+PHIL-001,Philanthropy,D3,Page title,Content,High,Open Philanthropy,1. Open Connect > Philanthropy,Title is 'Philanthropy'.,Spec,Not Run,,
+PHIL-002,Philanthropy,D3,Famous photo displayed,UI,High,Open page,1. Observe image,"Greg's photo (sitting on stool holding camera) is shown at the top, not distorted.",Spec,Not Run,,
+PHIL-003,Philanthropy,D3,Article 'How photographing changed my life.',Content,High,Open page,1. Read article,Full article text is present (starts 'People who know me from school might know me as a shy boy...' and ends with Cluse Watches testimonial).,Spec,Not Run,,
+PHIL-004,Philanthropy,D3,Article formatting preserved,UI,Medium,Open page,1. Compare with source document,"Paragraphs, quotes and formatting match the source.",Spec,Not Run,,
+PHIL-005,Philanthropy,D3,Testimonials shown,Content,Low,Open page,1. Locate Alexandra Frida and Cluse Watches quotes,Both quotes shown in full.,Spec,Not Run,,
+PHIL-006,Philanthropy,D3,Name consistency in testimonials,Content,Medium,Open page,1. Read testimonials,Testimonials refer to 'Liselotte' while the site owner is Greg - confirm with stakeholders.,Needs clarification,Not Run,,
+CON-001,Contact,D4,Page content,Content,High,Open Contact,1. Open Connect > Contact,Greg's photo and message ('Hi friend! Greg here. ...' incl. business-inquiry paragraph) shown above the feedback form.,Spec,Not Run,,
+CON-002,Contact,D4,Form fields and order,UI,High,Open page,1. Observe form,"Fields: Firstname, Lastname, Email, Subject, Message and a submit button.",Spec,Not Run,,
+CON-003,Contact,D4,Submit button label,UI,Low,Open page,1. Observe button,Button label not specified - confirm (e.g. 'Send').,Needs clarification,Not Run,,
+CON-004,Contact,D4,Firstname - placeholder,UI,Low,Open form,1. Observe empty Firstname field,Placeholder: 'Please enter your firstname'.,Spec,Not Run,,
+CON-005,Contact,D4,Firstname - empty value,Negative,High,Open form,"1. Leave Firstname empty, fill others validly
+2. Submit",Submission blocked; error 'Firstname is required.' shown.,Spec,Not Run,,
+CON-006,Contact,D4,Firstname - spaces only,Negative,Medium,Open form,"1. Enter 5 spaces in Firstname
+2. Submit",Treated as empty; error 'Firstname is required.'.,Spec,Not Run,,
+CON-007,Contact,D4,Firstname - valid value,Functional,High,Open form,1. Enter 'John',"Value accepted, no error displayed.",Spec,Not Run,,
+CON-008,Contact,D4,Firstname - max length (48 chars),Boundary,Medium,Open form,"1. Enter exactly 48 characters
+2. Submit",Value accepted in full.,Spec,Not Run,,
+CON-009,Contact,D4,Firstname - exceeds max length (49 chars),Boundary,Medium,Open form,1. Enter/paste 49 characters,Input is limited to 48 characters (or validation error shown); no data loss/exception.,Spec,Not Run,,
+CON-010,Contact,D4,Firstname - invalid characters (alpha type),Negative,Medium,Open form,"1. Enter 'J0hn123' or '@#$%'
+2. Submit",Value is rejected/ignored per 'alpha' type with an error message.,Spec (type) - error text to confirm,Not Run,,
+CON-011,Contact,D4,Firstname - script/HTML injection,Security,Medium,Open form,"1. Enter <script>alert(1)</script>
+2. Submit",Input is rejected or escaped; no script execution.,Assumed (not in spec),Not Run,,
+CON-012,Contact,D4,Lastname - placeholder,UI,Low,Open form,1. Observe empty Lastname field,Placeholder: 'Please enter your lastname'.,Spec,Not Run,,
+CON-013,Contact,D4,Lastname - empty value,Negative,High,Open form,"1. Leave Lastname empty, fill others validly
+2. Submit",Submission blocked; error 'Lastname is required.' shown.,Spec,Not Run,,
+CON-014,Contact,D4,Lastname - spaces only,Negative,Medium,Open form,"1. Enter 5 spaces in Lastname
+2. Submit",Treated as empty; error 'Lastname is required.'.,Spec,Not Run,,
+CON-015,Contact,D4,Lastname - valid value,Functional,High,Open form,1. Enter 'Smith',"Value accepted, no error displayed.",Spec,Not Run,,
+CON-016,Contact,D4,Lastname - max length (48 chars),Boundary,Medium,Open form,"1. Enter exactly 48 characters
+2. Submit",Value accepted in full.,Spec,Not Run,,
+CON-017,Contact,D4,Lastname - exceeds max length (49 chars),Boundary,Medium,Open form,1. Enter/paste 49 characters,Input is limited to 48 characters (or validation error shown); no data loss/exception.,Spec,Not Run,,
+CON-018,Contact,D4,Lastname - invalid characters (alpha type),Negative,Medium,Open form,"1. Enter 'Sm1th' or '!!!'
+2. Submit",Value is rejected/ignored per 'alpha' type with an error message.,Spec (type) - error text to confirm,Not Run,,
+CON-019,Contact,D4,Lastname - script/HTML injection,Security,Medium,Open form,"1. Enter <script>alert(1)</script>
+2. Submit",Input is rejected or escaped; no script execution.,Assumed (not in spec),Not Run,,
+CON-020,Contact,D4,Email - placeholder,UI,Low,Open form,1. Observe empty Email field,Placeholder: 'Please enter your email'.,Spec,Not Run,,
+CON-021,Contact,D4,Email - empty value,Negative,High,Open form,"1. Leave Email empty, fill others validly
+2. Submit",Submission blocked; error 'Valid email is required.' shown.,Spec,Not Run,,
+CON-022,Contact,D4,Email - spaces only,Negative,Medium,Open form,"1. Enter 5 spaces in Email
+2. Submit",Treated as empty; error 'Valid email is required.'.,Spec,Not Run,,
+CON-023,Contact,D4,Email - valid value,Functional,High,Open form,1. Enter 'john.smith@example.com',"Value accepted, no error displayed.",Spec,Not Run,,
+CON-024,Contact,D4,Email - max length (100 chars),Boundary,Medium,Open form,"1. Enter exactly 100 characters
+2. Submit",Value accepted in full.,Spec,Not Run,,
+CON-025,Contact,D4,Email - exceeds max length (101 chars),Boundary,Medium,Open form,1. Enter/paste 101 characters,Input is limited to 100 characters (or validation error shown); no data loss/exception.,Spec,Not Run,,
+CON-026,Contact,D4,Email - invalid characters (email type),Negative,Medium,Open form,"1. Enter 'john.smith', 'john@', '@example.com', 'john smith@example.com', 'john@example'
+2. Submit",Value is rejected/ignored per 'email' type with an error message.,Spec (type) - error text to confirm,Not Run,,
+CON-027,Contact,D4,Email - script/HTML injection,Security,Medium,Open form,"1. Enter <script>alert(1)</script>
+2. Submit",Input is rejected or escaped; no script execution.,Assumed (not in spec),Not Run,,
+CON-028,Contact,D4,Subject - placeholder,UI,Low,Open form,1. Observe empty Subject field,Placeholder: 'Please enter letter subject'.,Spec,Not Run,,
+CON-029,Contact,D4,Subject - empty value,Negative,High,Open form,"1. Leave Subject empty, fill others validly
+2. Submit",Submission blocked; error 'Subject is required.' shown.,Spec,Not Run,,
+CON-030,Contact,D4,Subject - spaces only,Negative,Medium,Open form,"1. Enter 5 spaces in Subject
+2. Submit",Treated as empty; error 'Subject is required.'.,Spec,Not Run,,
+CON-031,Contact,D4,Subject - valid value,Functional,High,Open form,1. Enter 'Photo session',"Value accepted, no error displayed.",Spec,Not Run,,
+CON-032,Contact,D4,Subject - max length (48 chars),Boundary,Medium,Open form,"1. Enter exactly 48 characters
+2. Submit",Value accepted in full.,Spec,Not Run,,
+CON-033,Contact,D4,Subject - exceeds max length (49 chars),Boundary,Medium,Open form,1. Enter/paste 49 characters,Input is limited to 48 characters (or validation error shown); no data loss/exception.,Spec,Not Run,,
+CON-034,Contact,D4,Subject - invalid characters (alpha type),Negative,Medium,Open form,"1. Enter '12345' or '@@@'
+2. Submit",Value is rejected/ignored per 'alpha' type with an error message.,Spec (type) - error text to confirm,Not Run,,
+CON-035,Contact,D4,Subject - script/HTML injection,Security,Medium,Open form,"1. Enter <script>alert(1)</script>
+2. Submit",Input is rejected or escaped; no script execution.,Assumed (not in spec),Not Run,,
+CON-036,Contact,D4,Message - placeholder,UI,Low,Open form,1. Observe empty Message field,Placeholder: 'Message for me'.,Spec,Not Run,,
+CON-037,Contact,D4,Message - empty value,Negative,High,Open form,"1. Leave Message empty, fill others validly
+2. Submit",Submission blocked; error 'Please leave me a message.' shown.,Spec,Not Run,,
+CON-038,Contact,D4,Message - spaces only,Negative,Medium,Open form,"1. Enter 5 spaces in Message
+2. Submit",Treated as empty; error 'Please leave me a message.'.,Spec,Not Run,,
+CON-039,Contact,D4,Message - valid value,Functional,High,Open form,"1. Enter 'Hello Greg, I would like to book a shoot.'","Value accepted, no error displayed.",Spec,Not Run,,
+CON-040,Contact,D4,Message - max length (2048 chars),Boundary,Medium,Open form,"1. Enter exactly 2048 characters
+2. Submit",Value accepted in full.,Spec,Not Run,,
+CON-041,Contact,D4,Message - exceeds max length (2049 chars),Boundary,Medium,Open form,1. Enter/paste 2049 characters,Input is limited to 2048 characters (or validation error shown); no data loss/exception.,Spec,Not Run,,
+CON-042,Contact,D4,Message - script/HTML injection,Security,Medium,Open form,"1. Enter <script>alert(1)</script>
+2. Submit",Input is rejected or escaped; no script execution.,Assumed (not in spec),Not Run,,
+CON-043,Contact,D4,Invalid email formats rejected,Negative,High,Open form,"1. Enter each of: abc, abc@, @abc.com, abc@abc, a b@abc.com, abc@@abc.com
+2. Submit",Error 'Valid email is required.' for each.,Spec,Not Run,,
+CON-044,Contact,D4,All fields empty,Negative,High,Open form,1. Click submit with empty form,All five required-field error messages are shown; nothing is sent.,Spec,Not Run,,
+CON-045,Contact,D4,Error message clears after correction,Functional,Medium,Errors visible,1. Enter valid values in each invalid field,Error messages disappear.,Spec,Not Run,,
+CON-046,Contact,D4,Successful submission,Functional,High,Open form,"1. Fill all fields validly
+2. Submit",Form is submitted; confirmation shown to user; letter is delivered to Greg's mailbox (see Requirement Issues #14 - address defined in spec).,Spec,Not Run,,
+CON-047,Contact,D4,Letter content,Functional,High,Successful submission done,1. Open received email,"Email contains the user's message and the line 'Please, contact <firstname> <lastname>: <email>' with correct values; subject equals entered subject.",Spec (exact format to confirm),Not Run,,
+CON-048,Contact,D4,Form reset after submit,Functional,Low,Successful submission done,1. Observe form,Form cleared (or confirmation page shown).,Assumed (not in spec),Not Run,,
+CON-049,Contact,D4,Double submit,Negative,Low,Valid form,1. Double-click submit,Only one email is sent.,Assumed (not in spec),Not Run,,
+CON-050,Contact,D4,Message with 2048 characters incl. line breaks,Boundary,Low,Open form,"1. Enter 2048 chars with line breaks
+2. Submit",Accepted; line breaks preserved in email.,Assumed (not in spec),Not Run,,
+CON-051,Contact,D4,Credentials are not exposed to client,Security,High,Open site,1. View page source / network traffic of the form,No mailbox address password or SMTP credentials are visible client-side.,Assumed (not in spec),Not Run,,
+SESS-001,Our Sessions,E,Page title,Content,High,Open Sessions,1. Click SESSIONS,Title is 'Our Sessions'.,Spec,Not Run,,
+SESS-002,Our Sessions,E,Mini Studio Session - card content,Content,High,Open Sessions,1. Observe 'Mini Studio Session' block,"Photo, start price $250 USD, description: ""Fee includes a 1-hour in-studio session, online watermarked gallery and design appointment."" and 'Book now' button are shown.",Spec,Not Run,,
+SESS-003,Our Sessions,E,Mini Studio Session - Book now,Navigation,High,Open Sessions,1. Click 'Book now' for Mini Studio Session,'Book Session' page opens for Mini Studio Session.,Spec,Not Run,,
+SESS-004,Our Sessions,E,Mini Outdoor Session - card content,Content,High,Open Sessions,1. Observe 'Mini Outdoor Session' block,"Photo, start price $350 USD, description: ""Fee includes a 1-hour outdoor session, online watermarked gallery and design appointment. We preselect various locations around the city and will confirm the meeting spot once you are scheduled."" and 'Book now' button are shown.",Spec,Not Run,,
+SESS-005,Our Sessions,E,Mini Outdoor Session - Book now,Navigation,High,Open Sessions,1. Click 'Book now' for Mini Outdoor Session,'Book Session' page opens for Mini Outdoor Session.,Spec,Not Run,,
+SESS-006,Our Sessions,E,Standard Session - card content,Content,High,Open Sessions,1. Observe 'Standard Session' block,"Photo, start price $650 USD, description: ""A 3-hour creative session to execute your headshot needs. Everyone can use that ONE shot - but getting more than one is way more fun. You won't even know what to choose for your Linkden, FB, profile, business card, website, etc. The uses are endless."" and 'Book now' button are shown.",Spec,Not Run,,
+SESS-007,Our Sessions,E,Standard Session - Book now,Navigation,High,Open Sessions,1. Click 'Book now' for Standard Session,'Book Session' page opens for Standard Session.,Spec,Not Run,,
+SESS-008,Our Sessions,E,Three sessions displayed in order,UI,Medium,Open Sessions,1. Observe page,"Mini Studio, Mini Outdoor, Standard sessions in this order.",Spec,Not Run,,
+SESS-009,Our Sessions,E,Sessions tab does not require login,Functional,Low,Fresh browser session,1. Open Sessions,Accessible without authentication.,Assumed (not in spec),Not Run,,
+BOOK-001,Book Session,E1,Page title,Content,High,Open Book Session,1. Click 'Book now' on any session,Title is 'Book Session'.,Spec,Not Run,,
+BOOK-002,Book Session,E1,Page elements,UI,High,Open Book Session,1. Observe page,"Photo, start price, Additional subjects dropdown, Book button, Details and Back button are shown.",Spec,Not Run,,
+BOOK-003,Book Session,E1,"Mini Studio Session - photo, price and details",Content,High,Open Book Session for Mini Studio Session,"1. Check photo, start price, details","Session-specific photo; start price $250 USD; details: Fee includes a 1-hour in-studio session, online watermarked gallery and design appointment. Additional subjects: $55. Subjects include siblings, parents, pets, friends or colleagues. Parents count as one additional subject. All prints and products are sold separately. Archival prints include the corresponding hi-res digital file. Digital files are not included in session fee, with books nor sold as a separate package.",Spec,Not Run,,
+BOOK-004,Book Session,E1,"Mini Outdoor Session - photo, price and details",Content,High,Open Book Session for Mini Outdoor Session,"1. Check photo, start price, details","Session-specific photo; start price $350 USD; details: Fee includes a 1-hour outdoor session, online watermarked gallery and design appointment. We preselect various locations around the city and will confirm the meeting spot once you are scheduled. Additional subjects: $55. Subjects include siblings, parents, pets, friends or colleagues. Parents count as one additional subject. All prints and products are sold separately. Archival prints include the corresponding hi-res digital file. Digital files are not included in session fee, with books nor sold as a separate package.",Spec,Not Run,,
+BOOK-005,Book Session,E1,"Standard Session - photo, price and details",Content,High,Open Book Session for Standard Session,"1. Check photo, start price, details","Session-specific photo; start price $650 USD; details: A 3-hour creative session to execute your headshot needs. Everyone can use that ONE shot - but getting more than one is way more fun. You won't even know what to choose for your Linkden, FB, profile, business card, website, etc. The uses are endless. Additional subjects: $55. Subjects include siblings, parents, pets, friends or colleagues. Parents count as one additional subject. All prints and products are sold separately. Archival prints include the corresponding hi-res digital file. Digital files are not included in session fee, with books nor sold as a separate package.",Spec,Not Run,,
+BOOK-006,Book Session,E1,"Mini Studio details: 'Additional subjects: $55' in bold, 'sold separately' in bold",UI,Low,Open Book Session,1. Inspect formatting,Bold formatting is applied as in the specification.,Spec,Not Run,,
+BOOK-007,Book Session,E1,Dropdown has 11 values,Functional,High,Open Book Session,1. Open Additional subjects dropdown,"Options: None, 1, 2, ..., 10 (11 entries).",Spec ('10 values + none'),Not Run,,
+BOOK-008,Book Session,E1,Dropdown default value,Functional,Medium,Open Book Session,1. Observe dropdown,Default is 'None' (0 additional subjects).,Assumed (not in spec),Not Run,,
+BOOK-009,Book Session,E1,Dropdown selection can be changed,Functional,Medium,Open Book Session,"1. Select 2, then 10, then None",Selected value displays correctly each time.,Spec,Not Run,,
+BOOK-010,Book Session,E1,Back button,Navigation,High,Open Book Session,1. Click Back,Returns to Our Sessions page.,Spec,Not Run,,
+BOOK-011,Book Session,E1,Book button leads to Book Information (no additional subjects),Navigation,High,Open Book Session,"1. Keep 'None'
+2. Click Book",Book Information page opens with the chosen session and 0 additional subjects.,Spec,Not Run,,
+BOOK-012,Book Session,E1,Book button passes selected subjects,Functional,High,Open Book Session,"1. Select 2
+2. Click Book",Book Information shows 'Additional Subjects: 2'.,Spec,Not Run,,
+BOOK-013,Book Session,E1,Book button passes selected session for each type,Functional,High,Open Book Session for each session,1. Click Book for each of the three sessions,Correct session name/photo/price on Book Information in each case.,Spec,Not Run,,
+BOOK-014,Book Session,E1,Selection persists on Back from Book Information,Functional,Low,On Book Information after selecting 2,1. Use browser Back,Dropdown value retained or reset consistently.,Assumed (not in spec),Not Run,,
+INFO-001,Book Information,E2,Page title and blocks,Content,High,Open Book Information,1. Click Book from Book Session,Title 'Book Information'; blocks 'Session Information' and 'Contact Information'.,Spec,Not Run,,
+INFO-002,Book Information,E2,Total price - Mini Studio Session with 0 additional subjects,Functional,High,Open Book Session for Mini Studio Session,"1. Keep 'None'
+2. Click Book","Session Information: photo, 'Mini Studio Session', 'Additional Subjects: 0', Total price = 250 + 55*0 = $250 USD.",Spec,Not Run,,
+INFO-003,Book Information,E2,Total price - Mini Studio Session with 2 additional subjects,Functional,High,Open Book Session for Mini Studio Session,"1. Select 2 in dropdown
+2. Click Book","Session Information: photo, 'Mini Studio Session', 'Additional Subjects: 2', Total price = 250 + 55*2 = $360 USD.",Spec,Not Run,,
+INFO-004,Book Information,E2,Total price - Mini Studio Session with 10 additional subjects,Functional,High,Open Book Session for Mini Studio Session,"1. Select 10 in dropdown
+2. Click Book","Session Information: photo, 'Mini Studio Session', 'Additional Subjects: 10', Total price = 250 + 55*10 = $800 USD.",Spec,Not Run,,
+INFO-005,Book Information,E2,Total price - Mini Outdoor Session with 0 additional subjects,Functional,High,Open Book Session for Mini Outdoor Session,"1. Keep 'None'
+2. Click Book","Session Information: photo, 'Mini Outdoor Session', 'Additional Subjects: 0', Total price = 350 + 55*0 = $350 USD.",Spec,Not Run,,
+INFO-006,Book Information,E2,Total price - Mini Outdoor Session with 2 additional subjects,Functional,High,Open Book Session for Mini Outdoor Session,"1. Select 2 in dropdown
+2. Click Book","Session Information: photo, 'Mini Outdoor Session', 'Additional Subjects: 2', Total price = 350 + 55*2 = $460 USD.",Spec,Not Run,,
+INFO-007,Book Information,E2,Total price - Mini Outdoor Session with 10 additional subjects,Functional,High,Open Book Session for Mini Outdoor Session,"1. Select 10 in dropdown
+2. Click Book","Session Information: photo, 'Mini Outdoor Session', 'Additional Subjects: 10', Total price = 350 + 55*10 = $900 USD.",Spec,Not Run,,
+INFO-008,Book Information,E2,Total price - Standard Session with 0 additional subjects,Functional,High,Open Book Session for Standard Session,"1. Keep 'None'
+2. Click Book","Session Information: photo, 'Standard Session', 'Additional Subjects: 0', Total price = 650 + 55*0 = $650 USD.",Spec,Not Run,,
+INFO-009,Book Information,E2,Total price - Standard Session with 2 additional subjects,Functional,High,Open Book Session for Standard Session,"1. Select 2 in dropdown
+2. Click Book","Session Information: photo, 'Standard Session', 'Additional Subjects: 2', Total price = 650 + 55*2 = $760 USD.",Spec,Not Run,,
+INFO-010,Book Information,E2,Total price - Standard Session with 10 additional subjects,Functional,High,Open Book Session for Standard Session,"1. Select 10 in dropdown
+2. Click Book","Session Information: photo, 'Standard Session', 'Additional Subjects: 10', Total price = 650 + 55*10 = $1200 USD.",Spec,Not Run,,
+INFO-011,Book Information,E2,Session information photo,UI,Low,Open Book Information,1. Observe photo,Photo corresponds to selected session.,Spec,Not Run,,
+INFO-012,Book Information - Contact form,E2,Email - placeholder,UI,Low,Open form,1. Observe empty Email field,Placeholder: 'Please enter your email'.,Spec,Not Run,,
+INFO-013,Book Information - Contact form,E2,Email - empty value,Negative,High,Open form,"1. Leave Email empty, fill others validly
+2. Submit",Submission blocked; error 'Valid email is required.' shown.,Spec,Not Run,,
+INFO-014,Book Information - Contact form,E2,Email - spaces only,Negative,Medium,Open form,"1. Enter 5 spaces in Email
+2. Submit",Treated as empty; error 'Valid email is required.'.,Spec,Not Run,,
+INFO-015,Book Information - Contact form,E2,Email - valid value,Functional,High,Open form,1. Enter 'john.smith@example.com',"Value accepted, no error displayed.",Spec,Not Run,,
+INFO-016,Book Information - Contact form,E2,Email - max length (100 chars),Boundary,Medium,Open form,"1. Enter exactly 100 characters
+2. Submit",Value accepted in full.,Spec,Not Run,,
+INFO-017,Book Information - Contact form,E2,Email - exceeds max length (101 chars),Boundary,Medium,Open form,1. Enter/paste 101 characters,Input is limited to 100 characters (or validation error shown); no data loss/exception.,Spec,Not Run,,
+INFO-018,Book Information - Contact form,E2,Email - invalid characters (email (spec says 'alpha') type),Negative,Medium,Open form,"1. Enter 'john', 'john@', '@x.com', 'a b@x.com'
+2. Submit",Value is rejected/ignored per 'email (spec says 'alpha')' type with an error message.,Spec (type) - error text to confirm,Not Run,,
+INFO-019,Book Information - Contact form,E2,Email - script/HTML injection,Security,Medium,Open form,"1. Enter <script>alert(1)</script>
+2. Submit",Input is rejected or escaped; no script execution.,Assumed (not in spec),Not Run,,
+INFO-020,Book Information - Contact form,E2,Email - NOTE type conflict,Content,Medium,-,1. Review requirement,Spec says 'alpha type' but error text says 'Valid email is required' - confirm email-format validation is applied.,Needs clarification,Not Run,,
+INFO-021,Book Information - Contact form,E2,Firstname - placeholder,UI,Low,Open form,1. Observe empty Firstname field,Placeholder: 'Please enter your firstname'.,Spec,Not Run,,
+INFO-022,Book Information - Contact form,E2,Firstname - empty value,Negative,High,Open form,"1. Leave Firstname empty, fill others validly
+2. Submit",Submission blocked; error 'Firstname is required.' shown.,Spec,Not Run,,
+INFO-023,Book Information - Contact form,E2,Firstname - spaces only,Negative,Medium,Open form,"1. Enter 5 spaces in Firstname
+2. Submit",Treated as empty; error 'Firstname is required.'.,Spec,Not Run,,
+INFO-024,Book Information - Contact form,E2,Firstname - valid value,Functional,High,Open form,1. Enter 'John',"Value accepted, no error displayed.",Spec,Not Run,,
+INFO-025,Book Information - Contact form,E2,Firstname - max length (48 chars),Boundary,Medium,Open form,"1. Enter exactly 48 characters
+2. Submit",Value accepted in full.,Spec,Not Run,,
+INFO-026,Book Information - Contact form,E2,Firstname - exceeds max length (49 chars),Boundary,Medium,Open form,1. Enter/paste 49 characters,Input is limited to 48 characters (or validation error shown); no data loss/exception.,Spec,Not Run,,
+INFO-027,Book Information - Contact form,E2,Firstname - invalid characters (alpha type),Negative,Medium,Open form,"1. Enter 'J0hn' or '@#$'
+2. Submit",Value is rejected/ignored per 'alpha' type with an error message.,Spec (type) - error text to confirm,Not Run,,
+INFO-028,Book Information - Contact form,E2,Firstname - script/HTML injection,Security,Medium,Open form,"1. Enter <script>alert(1)</script>
+2. Submit",Input is rejected or escaped; no script execution.,Assumed (not in spec),Not Run,,
+INFO-029,Book Information - Contact form,E2,Lastname - placeholder,UI,Low,Open form,1. Observe empty Lastname field,Placeholder: 'Please enter your lastname'.,Spec,Not Run,,
+INFO-030,Book Information - Contact form,E2,Lastname - empty value,Negative,High,Open form,"1. Leave Lastname empty, fill others validly
+2. Submit",Submission blocked; error 'Lastname is required.' shown.,Spec,Not Run,,
+INFO-031,Book Information - Contact form,E2,Lastname - spaces only,Negative,Medium,Open form,"1. Enter 5 spaces in Lastname
+2. Submit",Treated as empty; error 'Lastname is required.'.,Spec,Not Run,,
+INFO-032,Book Information - Contact form,E2,Lastname - valid value,Functional,High,Open form,1. Enter 'Smith',"Value accepted, no error displayed.",Spec,Not Run,,
+INFO-033,Book Information - Contact form,E2,Lastname - max length (48 chars),Boundary,Medium,Open form,"1. Enter exactly 48 characters
+2. Submit",Value accepted in full.,Spec,Not Run,,
+INFO-034,Book Information - Contact form,E2,Lastname - exceeds max length (49 chars),Boundary,Medium,Open form,1. Enter/paste 49 characters,Input is limited to 48 characters (or validation error shown); no data loss/exception.,Spec,Not Run,,
+INFO-035,Book Information - Contact form,E2,Lastname - invalid characters (alpha type),Negative,Medium,Open form,"1. Enter 'Sm1th' or '!!!'
+2. Submit",Value is rejected/ignored per 'alpha' type with an error message.,Spec (type) - error text to confirm,Not Run,,
+INFO-036,Book Information - Contact form,E2,Lastname - script/HTML injection,Security,Medium,Open form,"1. Enter <script>alert(1)</script>
+2. Submit",Input is rejected or escaped; no script execution.,Assumed (not in spec),Not Run,,
+INFO-037,Book Information - Contact form,E2,Company - placeholder,UI,Low,Open form,1. Observe empty field,Placeholder: 'Please enter your company'.,Spec,Not Run,,
+INFO-038,Book Information - Contact form,E2,Company - empty is accepted (optional),Functional,Medium,Open form,"1. Leave empty, fill others validly
+2. Submit",Form is accepted; no error for this field.,Spec,Not Run,,
+INFO-039,Book Information - Contact form,E2,Company - valid value,Functional,High,Open form,1. Enter 'Acme Ltd',"Value accepted, no error displayed.",Spec,Not Run,,
+INFO-040,Book Information - Contact form,E2,Company - max length (48 chars),Boundary,Medium,Open form,"1. Enter exactly 48 characters
+2. Submit",Value accepted in full.,Spec,Not Run,,
+INFO-041,Book Information - Contact form,E2,Company - exceeds max length (49 chars),Boundary,Medium,Open form,1. Enter/paste 49 characters,Input is limited to 48 characters (or validation error shown); no data loss/exception.,Spec,Not Run,,
+INFO-042,Book Information - Contact form,E2,Company - invalid characters (alpha type),Negative,Medium,Open form,"1. Enter '@@@@'
+2. Submit",Value is rejected/ignored per 'alpha' type with an error message.,Spec (type) - error text to confirm,Not Run,,
+INFO-043,Book Information - Contact form,E2,Company - script/HTML injection,Security,Medium,Open form,"1. Enter <script>alert(1)</script>
+2. Submit",Input is rejected or escaped; no script execution.,Assumed (not in spec),Not Run,,
+INFO-044,Book Information - Contact form,E2,Address - placeholder,UI,Low,Open form,1. Observe empty Address field,Placeholder: 'Please enter your address'.,Spec,Not Run,,
+INFO-045,Book Information - Contact form,E2,Address - empty value,Negative,High,Open form,"1. Leave Address empty, fill others validly
+2. Submit",Submission blocked; error 'Address is required.' shown.,Spec,Not Run,,
+INFO-046,Book Information - Contact form,E2,Address - spaces only,Negative,Medium,Open form,"1. Enter 5 spaces in Address
+2. Submit",Treated as empty; error 'Address is required.'.,Spec,Not Run,,
+INFO-047,Book Information - Contact form,E2,Address - valid value,Functional,High,Open form,1. Enter 'Main Street 15',"Value accepted, no error displayed.",Spec,Not Run,,
+INFO-048,Book Information - Contact form,E2,Address - max length (100 chars),Boundary,Medium,Open form,"1. Enter exactly 100 characters
+2. Submit",Value accepted in full.,Spec,Not Run,,
+INFO-049,Book Information - Contact form,E2,Address - exceeds max length (101 chars),Boundary,Medium,Open form,1. Enter/paste 101 characters,Input is limited to 100 characters (or validation error shown); no data loss/exception.,Spec,Not Run,,
+INFO-050,Book Information - Contact form,E2,Address - script/HTML injection,Security,Medium,Open form,"1. Enter <script>alert(1)</script>
+2. Submit",Input is rejected or escaped; no script execution.,Assumed (not in spec),Not Run,,
+INFO-051,Book Information - Contact form,E2,Apartment - placeholder,UI,Low,Open form,1. Observe empty Apartment field,"Placeholder: 'Please enter your apartment, suite, etc.'.",Spec,Not Run,,
+INFO-052,Book Information - Contact form,E2,Apartment - empty value,Negative,High,Open form,"1. Leave Apartment empty, fill others validly
+2. Submit",Submission blocked; error 'Apartment is required.' shown.,Spec,Not Run,,
+INFO-053,Book Information - Contact form,E2,Apartment - spaces only,Negative,Medium,Open form,"1. Enter 5 spaces in Apartment
+2. Submit",Treated as empty; error 'Apartment is required.'.,Spec,Not Run,,
+INFO-054,Book Information - Contact form,E2,Apartment - valid value,Functional,High,Open form,1. Enter 'Apt 4B',"Value accepted, no error displayed.",Spec,Not Run,,
+INFO-055,Book Information - Contact form,E2,Apartment - max length (100 chars),Boundary,Medium,Open form,"1. Enter exactly 100 characters
+2. Submit",Value accepted in full.,Spec,Not Run,,
+INFO-056,Book Information - Contact form,E2,Apartment - exceeds max length (101 chars),Boundary,Medium,Open form,1. Enter/paste 101 characters,Input is limited to 100 characters (or validation error shown); no data loss/exception.,Spec,Not Run,,
+INFO-057,Book Information - Contact form,E2,Apartment - script/HTML injection,Security,Medium,Open form,"1. Enter <script>alert(1)</script>
+2. Submit",Input is rejected or escaped; no script execution.,Assumed (not in spec),Not Run,,
+INFO-058,Book Information - Contact form,E2,City - placeholder,UI,Low,Open form,1. Observe empty City field,Placeholder: 'Please enter your city'.,Spec,Not Run,,
+INFO-059,Book Information - Contact form,E2,City - empty value,Negative,High,Open form,"1. Leave City empty, fill others validly
+2. Submit",Submission blocked; error 'City is required.' shown.,Spec,Not Run,,
+INFO-060,Book Information - Contact form,E2,City - spaces only,Negative,Medium,Open form,"1. Enter 5 spaces in City
+2. Submit",Treated as empty; error 'City is required.'.,Spec,Not Run,,
+INFO-061,Book Information - Contact form,E2,City - valid value,Functional,High,Open form,1. Enter 'Vancouver',"Value accepted, no error displayed.",Spec,Not Run,,
+INFO-062,Book Information - Contact form,E2,City - max length (48 chars),Boundary,Medium,Open form,"1. Enter exactly 48 characters
+2. Submit",Value accepted in full.,Spec,Not Run,,
+INFO-063,Book Information - Contact form,E2,City - exceeds max length (49 chars),Boundary,Medium,Open form,1. Enter/paste 49 characters,Input is limited to 48 characters (or validation error shown); no data loss/exception.,Spec,Not Run,,
+INFO-064,Book Information - Contact form,E2,City - invalid characters (alpha type),Negative,Medium,Open form,"1. Enter 'V4nc0uver1' or '@@@'
+2. Submit",Value is rejected/ignored per 'alpha' type with an error message.,Spec (type) - error text to confirm,Not Run,,
+INFO-065,Book Information - Contact form,E2,City - script/HTML injection,Security,Medium,Open form,"1. Enter <script>alert(1)</script>
+2. Submit",Input is rejected or escaped; no script execution.,Assumed (not in spec),Not Run,,
+INFO-066,Book Information - Contact form,E2,Country - placeholder,UI,Low,Open form,1. Observe empty Country field,Placeholder: 'Please enter your country'.,Spec,Not Run,,
+INFO-067,Book Information - Contact form,E2,Country - empty value,Negative,High,Open form,"1. Leave Country empty, fill others validly
+2. Submit",Submission blocked; error 'Country is required.' shown.,Spec,Not Run,,
+INFO-068,Book Information - Contact form,E2,Country - spaces only,Negative,Medium,Open form,"1. Enter 5 spaces in Country
+2. Submit",Treated as empty; error 'Country is required.'.,Spec,Not Run,,
+INFO-069,Book Information - Contact form,E2,Country - valid value,Functional,High,Open form,1. Enter 'Canada',"Value accepted, no error displayed.",Spec,Not Run,,
+INFO-070,Book Information - Contact form,E2,Country - max length (48 chars),Boundary,Medium,Open form,"1. Enter exactly 48 characters
+2. Submit",Value accepted in full.,Spec,Not Run,,
+INFO-071,Book Information - Contact form,E2,Country - exceeds max length (49 chars),Boundary,Medium,Open form,1. Enter/paste 49 characters,Input is limited to 48 characters (or validation error shown); no data loss/exception.,Spec,Not Run,,
+INFO-072,Book Information - Contact form,E2,Country - invalid characters (alpha type),Negative,Medium,Open form,"1. Enter 'C4nada' or '123'
+2. Submit",Value is rejected/ignored per 'alpha' type with an error message.,Spec (type) - error text to confirm,Not Run,,
+INFO-073,Book Information - Contact form,E2,Country - script/HTML injection,Security,Medium,Open form,"1. Enter <script>alert(1)</script>
+2. Submit",Input is rejected or escaped; no script execution.,Assumed (not in spec),Not Run,,
+INFO-074,Book Information - Contact form,E2,Postal code - placeholder,UI,Low,Open form,1. Observe empty Postal code field,Placeholder: 'Please enter your postal code'.,Spec,Not Run,,
+INFO-075,Book Information - Contact form,E2,Postal code - empty value,Negative,High,Open form,"1. Leave Postal code empty, fill others validly
+2. Submit",Submission blocked; error 'Postal code is required.' shown.,Spec,Not Run,,
+INFO-076,Book Information - Contact form,E2,Postal code - spaces only,Negative,Medium,Open form,"1. Enter 5 spaces in Postal code
+2. Submit",Treated as empty; error 'Postal code is required.'.,Spec,Not Run,,
+INFO-077,Book Information - Contact form,E2,Postal code - valid value,Functional,High,Open form,1. Enter 'V0N1B4',"Value accepted, no error displayed.",Spec,Not Run,,
+INFO-078,Book Information - Contact form,E2,Postal code - max length (10 chars),Boundary,Medium,Open form,"1. Enter exactly 10 characters
+2. Submit",Value accepted in full.,Spec,Not Run,,
+INFO-079,Book Information - Contact form,E2,Postal code - exceeds max length (11 chars),Boundary,Medium,Open form,1. Enter/paste 11 characters,Input is limited to 10 characters (or validation error shown); no data loss/exception.,Spec,Not Run,,
+INFO-080,Book Information - Contact form,E2,Postal code - script/HTML injection,Security,Medium,Open form,"1. Enter <script>alert(1)</script>
+2. Submit",Input is rejected or escaped; no script execution.,Assumed (not in spec),Not Run,,
+INFO-081,Book Information - Contact form,E2,Phone - placeholder,UI,Low,Open form,1. Observe empty Phone field,Placeholder: 'Please enter your phone'.,Spec,Not Run,,
+INFO-082,Book Information - Contact form,E2,Phone - empty value,Negative,High,Open form,"1. Leave Phone empty, fill others validly
+2. Submit",Submission blocked; error 'Phone is required.' shown.,Spec,Not Run,,
+INFO-083,Book Information - Contact form,E2,Phone - spaces only,Negative,Medium,Open form,"1. Enter 5 spaces in Phone
+2. Submit",Treated as empty; error 'Phone is required.'.,Spec,Not Run,,
+INFO-084,Book Information - Contact form,E2,Phone - valid value,Functional,High,Open form,1. Enter '442074352086',"Value accepted, no error displayed.",Spec,Not Run,,
+INFO-085,Book Information - Contact form,E2,Phone - max length (12 chars),Boundary,Medium,Open form,"1. Enter exactly 12 characters
+2. Submit",Value accepted in full.,Spec,Not Run,,
+INFO-086,Book Information - Contact form,E2,Phone - exceeds max length (13 chars),Boundary,Medium,Open form,1. Enter/paste 13 characters,Input is limited to 12 characters (or validation error shown); no data loss/exception.,Spec,Not Run,,
+INFO-087,Book Information - Contact form,E2,Phone - invalid characters (numeric type),Negative,Medium,Open form,"1. Enter 'abc123', '+44 20 7435', '12-34-56'
+2. Submit",Value is rejected/ignored per 'numeric' type with an error message.,Spec (type) - error text to confirm,Not Run,,
+INFO-088,Book Information - Contact form,E2,Phone - script/HTML injection,Security,Medium,Open form,"1. Enter <script>alert(1)</script>
+2. Submit",Input is rejected or escaped; no script execution.,Assumed (not in spec),Not Run,,
+INFO-089,Book Information - Contact form,E2,"Postal code - numeric-only/hyphenated codes (e.g. 12345, 123-45)",Negative,Medium,Open form,1. Enter '12345' and 'SW1A 1AA',Behaviour consistent with 'alpha' rule - spec likely too strict for real postal codes; confirm.,Needs clarification,Not Run,,
+INFO-090,Book Information - Contact form,E2,Phone - exactly 12 digits / 13 digits,Boundary,Medium,Open form,1. Enter 12 digits then 13 digits,12 accepted; 13th digit not accepted / error.,Spec,Not Run,,
+INFO-091,Book Information - Contact form,E2,Keep me up to date - unchecked by default,UI,Medium,Open form,1. Observe checkbox,Checkbox is unchecked.,Spec,Not Run,,
+INFO-092,Book Information - Contact form,E2,Keep me up to date - checked,Functional,High,Open form,"1. Check box
+2. Complete form and continue to booking completion",Entered email is added to the distribution group.,Spec,Not Run,,
+INFO-093,Book Information - Contact form,E2,Keep me up to date - unchecked,Functional,Medium,Open form,"1. Leave unchecked
+2. Complete booking",Email is NOT added to the distribution group.,Spec,Not Run,,
+INFO-094,Book Information - Contact form,E2,Keep me up to date - duplicate email,Negative,Low,Email already in distribution list,1. Check box and complete booking with the same email,No duplicate entry / no error.,Assumed (not in spec),Not Run,,
+INFO-095,Book Information - Contact form,E2,Save this information - unchecked by default,UI,Medium,Open form,1. Observe checkbox,Unchecked.,Spec,Not Run,,
+INFO-096,Book Information - Contact form,E2,Save this information - checked,Functional,High,Open form,"1. Check 'Save this information for next time'
+2. Complete a booking
+3. Start a new booking",Contact fields are pre-filled with previously entered data.,Spec,Not Run,,
+INFO-097,Book Information - Contact form,E2,Save this information - unchecked,Functional,Medium,Open form,"1. Leave unchecked
+2. Complete a booking
+3. Start a new booking",Contact fields are empty.,Spec,Not Run,,
+INFO-098,Book Information - Contact form,E2,Saved data overwritten by new data,Functional,Low,Data saved earlier,"1. Change values, keep box checked, complete booking
+2. Start new booking",Latest values are pre-filled.,Assumed (not in spec),Not Run,,
+INFO-099,Book Information - Contact form,E2,'Continue to payment method' with valid data,Navigation,High,All required fields valid,1. Click 'Continue to payment method',Payment page opens.,Spec,Not Run,,
+INFO-100,Book Information - Contact form,E2,'Continue to payment method' with empty required fields,Negative,High,Open form,1. Click continue with empty form,"Payment page not opened; all required error messages shown (Email, Firstname, Lastname, Address, Apartment, City, Country, Postal code, Phone).",Spec,Not Run,,
+INFO-101,Book Information - Contact form,E2,Order of fields,UI,Low,Open form,1. Observe form,"Email, newsletter checkbox, Firstname, Lastname, Company, Address, Apartment, City, Country, Postal code, Phone, Save checkbox, Continue button.",Spec,Not Run,,
+INFO-102,Book Information - Contact form,E2,Entered data retained after Back from Payment,Functional,Low,On Payment page,1. Click browser Back,Entered values preserved.,Assumed (not in spec),Not Run,,
+PAY-001,Payment,E3,Payment form layout,UI,High,Open Payment,1. Observe page,"'Payment Method' form: Owner, CVV, Card Number, Expiration Date (month & year dropdowns), VISA / MasterCard / AMEX logos, 'Confirm' button.",Spec,Not Run,,
+PAY-002,Payment,E3,Expiration year options are current/future,Functional,High,Open Payment,1. Open year dropdown,"Years start from current year (2026), none expired. Spec mock-up shows 2016.",Assumed (not in spec),Not Run,,
+PAY-003,Payment,E3,Expiration month options,Functional,Low,Open Payment,1. Open month dropdown,January-December available.,Spec,Not Run,,
+PAY-004,Payment,E3,Successful payment (valid test card),Functional,High,Booking data entered,"1. Fill Owner, Card Number, CVV, valid expiry
+2. Click Confirm",Payment succeeds; success message/page shown.,Assumed (payment rules not in spec),Not Run,,
+PAY-005,Payment,E3,Confirmation email sent to customer,Functional,High,Successful payment,1. Check inbox of email entered on Book Information,Email received with correct content.,Spec,Not Run,,
+PAY-006,Payment,E3,Notification email sent to Greg,Functional,High,Successful payment,1. Check Greg's mailbox,Email received with correct content.,Spec,Not Run,,
+PAY-007,Payment,E3,Email content template,Content,High,Successful payment,1. Open emails,"Text: 'Hi, <first name> <lastname> (<company>) client would like to have ""<session name>"" with <n> additional subjects. His address: <address>, <apartment>, <city>, <country>, <postal code>. Greg's manager can contact with <first name> <lastname> (<company>) by <phone>. Best Regards, Gregory Olsen Studio' - all placeholders replaced by entered values.",Spec,Not Run,,
+PAY-008,Payment,E3,Email content for Mini Studio Session with 3 additional subjects,Functional,Medium,Booking of Mini Studio Session with 3 subjects paid,1. Open email,Session name 'Mini Studio Session' and '3 additional subjects' in text.,Spec,Not Run,,
+PAY-009,Payment,E3,Email content for Mini Outdoor Session with 3 additional subjects,Functional,Medium,Booking of Mini Outdoor Session with 3 subjects paid,1. Open email,Session name 'Mini Outdoor Session' and '3 additional subjects' in text.,Spec,Not Run,,
+PAY-010,Payment,E3,Email content for Standard Session with 3 additional subjects,Functional,Medium,Booking of Standard Session with 3 subjects paid,1. Open email,Session name 'Standard Session' and '3 additional subjects' in text.,Spec,Not Run,,
+PAY-011,Payment,E3,Email when Company is empty,Negative,Medium,Company left blank; payment done,1. Open email,'()' is not shown / clean text (confirm expected format).,Needs clarification,Not Run,,
+PAY-012,Payment,E3,Email with special characters (& ' é),Negative,Low,Booking with special characters,"1. Pay
+2. Open email",Characters rendered correctly.,Assumed (not in spec),Not Run,,
+PAY-013,Payment,E3,Owner - (empty),Negative,High,Open Payment,"1. Enter (empty) in Owner, others valid
+2. Click Confirm",Required-field error; payment not processed; no emails sent.,Assumed (not in spec),Not Run,,
+PAY-014,Payment,E3,Card Number - (empty),Negative,High,Open Payment,"1. Enter (empty) in Card Number, others valid
+2. Click Confirm",Required-field error; payment not processed; no emails sent.,Assumed (not in spec),Not Run,,
+PAY-015,Payment,E3,CVV - (empty),Negative,High,Open Payment,"1. Enter (empty) in CVV, others valid
+2. Click Confirm",Required-field error; payment not processed; no emails sent.,Assumed (not in spec),Not Run,,
+PAY-016,Payment,E3,Card Number - abcd efgh,Negative,Medium,Open Payment,"1. Enter abcd efgh in Card Number, others valid
+2. Click Confirm",Rejected - digits only; payment not processed; no emails sent.,Assumed (not in spec),Not Run,,
+PAY-017,Payment,E3,Card Number - 4111 (too short),Negative,Medium,Open Payment,"1. Enter 4111 (too short) in Card Number, others valid
+2. Click Confirm",Invalid card number error; payment not processed; no emails sent.,Assumed (not in spec),Not Run,,
+PAY-018,Payment,E3,Card Number - 4111111111111112 (fails Luhn),Negative,Medium,Open Payment,"1. Enter 4111111111111112 (fails Luhn) in Card Number, others valid
+2. Click Confirm",Invalid card number error; payment not processed; no emails sent.,Assumed (not in spec),Not Run,,
+PAY-019,Payment,E3,CVV - 12 / 12345 / abc,Negative,Medium,Open Payment,"1. Enter 12 / 12345 / abc in CVV, others valid
+2. Click Confirm",Invalid CVV error (3 digits; 4 for AMEX); payment not processed; no emails sent.,Assumed (not in spec),Not Run,,
+PAY-020,Payment,E3,Expiration Date - Past month of current year,Negative,Medium,Open Payment,"1. Enter Past month of current year in Expiration Date, others valid
+2. Click Confirm",Card expired error; payment not processed; no emails sent.,Assumed (not in spec),Not Run,,
+PAY-021,Payment,E3,Declined payment,Negative,High,Payment provider returns decline,1. Pay with decline test card,Error message shown; user may retry; no emails sent.,Assumed (not in spec),Not Run,,
+PAY-022,Payment,E3,Double click on Confirm,Negative,High,Valid payment data,1. Double-click Confirm,Customer charged only once; emails sent once.,Assumed (not in spec),Not Run,,
+PAY-023,Payment,E3,Card logos displayed,UI,Low,Open Payment,1. Observe logos,"VISA, MasterCard, AMEX logos shown.",Spec,Not Run,,
+PAY-024,Payment,E3,Direct access to Payment without booking data,Negative,Medium,Fresh session,1. Open Payment URL directly,User is redirected to Sessions/Book Information; no empty booking can be paid.,Assumed (not in spec),Not Run,,
+PAY-025,Payment,E3,Payment page served over HTTPS,Security,High,-,1. Check URL / certificate,HTTPS used; no mixed-content warnings.,Assumed (not in spec),Not Run,,
+PAY-026,Payment,E3,Card data not stored / not logged,Security,High,Successful payment,"1. Check Save-info storage, cookies, local storage, emails",Card number/CVV not stored or emailed.,Assumed (not in spec),Not Run,,
+PAY-027,Payment,E3,"Browser Back after successful payment, re-submit",Negative,Medium,Payment completed,1. Press Back then Confirm,No duplicate payment/email.,Assumed (not in spec),Not Run,,
+INSTA-001,InstaOlsen,F,Link target,Navigation,High,Open site,1. Click INSTAOLSEN,Opens https://www.instagram.com/ph_gr.olsen/ (profile exists).,Spec,Not Run,,
+INSTA-002,InstaOlsen,F,Opens in new tab (recommended),Navigation,Low,Open site,1. Click INSTAOLSEN,Instagram opens in new tab so site stays open.,Needs clarification,Not Run,,
+INSTA-003,InstaOlsen,F,Footer vs tab Instagram link consistency,Content,Medium,Open site,1. Compare footer Instagram link with INSTAOLSEN,Footer: instagram.com/ph_olsen vs tab: instagram.com/ph_gr.olsen - confirm both intended.,Needs clarification,Not Run,,
+GEN-001,General / Non-functional,-,Compatibility - Chrome (latest),Compatibility,High,-,1. Run smoke flow: Home > Gallery > Clients > Contact form > Book session > Payment,All pages render and work with no console errors.,Assumed (not in spec),Not Run,,
+GEN-002,General / Non-functional,-,Compatibility - Firefox (latest),Compatibility,High,-,1. Run smoke flow: Home > Gallery > Clients > Contact form > Book session > Payment,All pages render and work with no console errors.,Assumed (not in spec),Not Run,,
+GEN-003,General / Non-functional,-,Compatibility - Safari (latest),Compatibility,High,-,1. Run smoke flow: Home > Gallery > Clients > Contact form > Book session > Payment,All pages render and work with no console errors.,Assumed (not in spec),Not Run,,
+GEN-004,General / Non-functional,-,Compatibility - Edge (latest),Compatibility,High,-,1. Run smoke flow: Home > Gallery > Clients > Contact form > Book session > Payment,All pages render and work with no console errors.,Assumed (not in spec),Not Run,,
+GEN-005,General / Non-functional,-,Responsive layout - Desktop 1920x1080,UI,Medium,-,1. Open all pages in Desktop 1920x1080,No horizontal scroll/overlap; fixed header usable; galleries and forms usable.,Assumed (not in spec),Not Run,,
+GEN-006,General / Non-functional,-,Responsive layout - Laptop 1366x768,UI,Medium,-,1. Open all pages in Laptop 1366x768,No horizontal scroll/overlap; fixed header usable; galleries and forms usable.,Assumed (not in spec),Not Run,,
+GEN-007,General / Non-functional,-,Responsive layout - Tablet 768x1024,UI,Medium,-,1. Open all pages in Tablet 768x1024,No horizontal scroll/overlap; fixed header usable; galleries and forms usable.,Assumed (not in spec),Not Run,,
+GEN-008,General / Non-functional,-,Responsive layout - Mobile 375x667,UI,Medium,-,1. Open all pages in Mobile 375x667,No horizontal scroll/overlap; fixed header usable; galleries and forms usable.,Assumed (not in spec),Not Run,,
+GEN-009,General / Non-functional,-,No broken links across the site,Functional,High,-,1. Run link checker on all pages,No internal 404s.,Assumed (not in spec),Not Run,,
+GEN-010,General / Non-functional,-,Images have alt text,Accessibility,Low,-,1. Inspect images,Meaningful alt attributes.,Assumed (not in spec),Not Run,,
+GEN-011,General / Non-functional,-,Keyboard navigation of forms and menu,Accessibility,Low,-,1. Use Tab/Enter on menu and forms,"All controls reachable, focus visible.",Assumed (not in spec),Not Run,,
+GEN-012,General / Non-functional,-,Page load time,Performance,Medium,-,"1. Load gallery pages (large images, up to ~1.1MB) on throttled 4G",Previews load fast (<3s); lazy loading/thumbnails used.,Assumed (not in spec),Not Run,,
+GEN-013,General / Non-functional,-,Browser tab titles,Content,Low,-,1. Check <title> for each page,Titles match page titles from the spec.,Assumed (not in spec),Not Run,,
+GEN-014,General / Non-functional,-,Session security of forms (CSRF/XSS/SQLi),Security,Medium,-,1. Run basic injection tests on all forms,No vulnerabilities.,Assumed (not in spec),Not Run,,
